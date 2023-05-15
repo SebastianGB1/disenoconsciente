@@ -4,11 +4,11 @@ export default function NavBar() {
   return (
     <nav className="header-bar">
       <div className="fila">
-        <CustomLink to="/" className="opcion">Inicio</CustomLink>
-        <CustomLink to="/prensa" className="opcion">Prensa</CustomLink>
-        <CustomLink to="/blog" className="opcion">Blog</CustomLink>
-        <CustomLink to="/directorio" className="opcion">Directorio</CustomLink>
-        <CustomLink to="/contacto" className="opcion">Contacto</CustomLink>
+        <CustomLink to="/disenocisiente/" className="opcion">Inicio</CustomLink>
+        <CustomLink to="/disenocisiente/prensa" className="opcion">Prensa</CustomLink>
+        <CustomLink to="/disenocisiente/blog" className="opcion">Blog</CustomLink>
+        <CustomLink to="/disenocisiente/directorio" className="opcion">Directorio</CustomLink>
+        <CustomLink to="/disenocisiente/contacto" className="opcion">Contacto</CustomLink>
       </div>
     </nav>
   );
