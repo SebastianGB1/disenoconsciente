@@ -1,0 +1,17 @@
+/* @import url("https://fonts.googleapis.com/css?family=Raleway"); */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "kiona";
+    src: url("/fonts/Kiona-Regular.ttf");
+  }
+
+@font-face {
+font-family: "cooper";
+src: url("/fonts/CooperFiveOpti-Black.otf");
+}

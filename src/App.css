@@ -1,0 +1,117 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.header-bar{
+  margin: 30px;
+  padding: 0;
+  background-color: #086851;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  color: #abc4a4;
+}
+
+nav a{
+  text-decoration: none;
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: medium;
+}
+
+.opcion{
+  margin: 1rem;
+  margin-inline: 2rem;
+  color: aliceblue;
+}
+
+.selected{
+  margin: 1rem;
+  margin-inline: 2rem;
+  color: rgb(211, 43, 71);
+  padding-bottom: 1rem;
+  
+}
+
+.fila{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  border-color: black;
+  border-width: 2px;
+}
+
+.container{
+  display: grid;
+  justify-content: center;
+  column-gap: 2;
+}
+
+
+.card{
+  margin: 1rem;
+}
+
+.car-row{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.gradient-naranja{
+  background-color: #f8ebe0;
+  background: radial-gradient( #ee792b 0%, #f8ebe0 60%);
+}
+
+.gradient-azul{
+  background-color: #f8ebe0;
+  background: radial-gradient( #909bb9 0%, #f8ebe0 60%);
+}
+
+.gradient-rosado{
+  background-color: #f8ebe0;
+  background: radial-gradient( #ea59c0 0%, #f8ebe0 60%);
+}
+
+.top-100{
+  top: 80rem;
+}
