@@ -13,11 +13,11 @@ function App() {
       <NavBar />
       <div className="mt-32">
         <Routes>
-          <Route path="/" element={<Home />} className="bg-blanco"/>
-          <Route path="/prensa" element={<Prensa />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/directorio" element={<Directorio />} />
-          <Route path="/contacto" element={<Contacto />} />
+          <Route path="disenoconsiente/" element={<Home />} className="bg-blanco"/>
+          <Route path="disenoconsiente/prensa" element={<Prensa />} />
+          <Route path="disenoconsiente/blog" element={<Blog />} />
+          <Route path="disenoconsiente/directorio" element={<Directorio />} />
+          <Route path="disenoconsiente/contacto" element={<Contacto />} />
         </Routes>
       </div>
     </>

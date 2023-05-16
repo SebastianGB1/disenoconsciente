@@ -14,7 +14,7 @@ function Home() {
           Desde los principios del siglo XX la clase social que desempeñó un
           papel
           <img
-            src="src/assets/Recurso 8.png"
+            src="src/static/images/Recurso 8.png"
             alt="Recurso 8"
             className="h-60 float-right m-2"
             />
@@ -60,10 +60,10 @@ function Home() {
         </p>
       </div>
       <div className="flex flex-row justify-between my-10 z-20 relative">
-        <img src="src/assets/Recurso 10.png" alt="renato" className="w-40 h-40"/>
-        <img src="src/assets/Recurso 11.png" alt="Reinaldo" className="w-40 h-40"/>
-        <img src="src/assets/Recurso 12.png" alt="Rebeca" className="w-40 h-40"/>
-        <img src="src/assets/Recurso 13.png" alt="Regina" className="w-40 h-40"/>
+        <img src="src/static/images/Recurso 10.png" alt="renato" className="w-40 h-40"/>
+        <img src="src/static/images/Recurso 11.png" alt="Reinaldo" className="w-40 h-40"/>
+        <img src="src/static/images/Recurso 12.png" alt="Rebeca" className="w-40 h-40"/>
+        <img src="src/static/images/Recurso 13.png" alt="Regina" className="w-40 h-40"/>
       </div>
       <p className="z-20 font-raleway relative text-justify">
           Este proyecto tiene como objetivo promover la adopción del diseño
@@ -104,9 +104,9 @@ function GradientRosado() {
 function ReTittle() {
   return (
     <div className="w-96 z-10 relative mt-3">
-      <p className="font-raleway font-bold text-2xl">Diseñe, pero tambien...</p>
+      <p className="font-raleway font-bold text-4xl mb-1">Diseñe, pero tambien...</p>
       <div className="flex flex-row">
-        <p className="font-raleway text-9xl text-rosado ml-16">RE</p>
+        <img src="src/static/images/Recurso 6.png" alt="RE" className="h-44 mt-2 mr-1"/>
         <ul className="list-">
           <li className="text-left font-kiona font-bold">duzca</li>
           <li className="text-left font-kiona font-bold">utilice</li>
