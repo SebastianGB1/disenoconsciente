@@ -1,4 +1,5 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import banner from '../static/images/LOGO HEAD BANNER.png'
 
 export default function NavBar() {
 
@@ -8,7 +9,7 @@ export default function NavBar() {
     <>
 <nav className="dark:bg-verde-oscuro fixed w-full z-50 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
   {/* <p className="mt-2 font-raleway text-4xl text-blanco">RE</p> */}
-  <img src="src/static/images/LOGO HEAD BANNER.png" alt="Logo head banner" className="w-28 pt-3 px-3 m-0 mx-auto" />
+  <img src={banner} alt="Logo head banner" className="w-28 pt-3 px-3 m-0 mx-auto" />
   <div className="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto pb-2">
   
   <div className="flex md:order-2">
