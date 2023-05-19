@@ -7,7 +7,7 @@ export default function NavBar() {
 
   return (
     <>
-<nav className="dark:bg-verde-oscuro fixed w-full z-50 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+<nav className="dark:bg-verde-oscuro fixed w-full z-50 top-0 left-0 border-b border-gray-200 dark:border-gray-600 header-bar">
   {/* <p className="mt-2 font-raleway text-4xl text-blanco">RE</p> */}
   <img src={banner} alt="Logo head banner" className="w-28 pt-3 px-3 m-0 mx-auto" />
   <div className="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto pb-2">
@@ -30,7 +30,7 @@ export default function NavBar() {
         <CustomLink to="disenoconsiente/blog" >BLOG</CustomLink>
       </li>
       <li>
-        <CustomLink to="disenoconsiente/directorio" >DIRECCTORIO PROVEEDORES</CustomLink>
+        <CustomLink to="disenoconsiente/directorio" >DIRECTORIO PROVEEDORES</CustomLink>
       </li>
       <li>
         <CustomLink to="disenoconsiente/contacto">CONTACTO</CustomLink>

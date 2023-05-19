@@ -1,10 +1,10 @@
 import React from "react";
-import letraRE from '../static/images/Recurso 6'
-import imagen8 from '../static/images/Recurso 8'
-import renato from '../static/images/Recurso 10'
-import reinaldo from '../static/images/Recurso 11'
-import rebeca from '../static/images/Recurso 12'
-import regina from '../static/images/Recurso 13'
+import letraRE from '../static/images/Recurso 6.png'
+import imagen8 from '../static/images/Recurso 8.png'
+import renato from '../static/images/Recurso 10.png'
+import reinaldo from '../static/images/Recurso 11.png'
+import rebeca from '../static/images/Recurso 12.png'
+import regina from '../static/images/Recurso 13.png'
 // import letra1 from '../static/images/Recurso 7'
 
 function Home() {
