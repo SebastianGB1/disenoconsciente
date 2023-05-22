@@ -5,14 +5,10 @@ import firma_regina from "../static/images/firma_regina.png";
 import leer_mas from '../static/images/leer_mas.png'
 
 export default function PrensaCard() {
-  const { setShowModal, setModalContent } = useContext(Context);
+  const { setShowModalImpacto } = useContext(Context);
 
   const handleClick = () => {
-    setShowModal(true);
-    setModalContent({
-      tittle: "Prueba",
-      body: 'Se supone que aca va descripcion mas larga del articulo. El boton "Ver mas" reenvia a google por ahora',
-    });
+    setShowModalImpacto(true);
   };
 
   return (
@@ -37,7 +33,7 @@ export default function PrensaCard() {
           <p className="mb-3 font-raleway text-justify leading-8 lg:w-97">
           El color es un elemento fundamental en el diseño. Desde la elección de la paleta de colores hasta la forma en que se aplican los pigmentos en los diferentes materiales, el color es capaz de evocar emociones, transmitir mensajes y transformar cualquier diseño en algo único y especial. A lo largo de la historia, los seres humanos han utilizado diferentes técnicas para obtener pigmentos y tintes naturales con los que colorear sus creaciones. Sin embargo, con la llegada de la industrialización, estas técnicas han sido transformadas para adaptarse a un mundo cada vez más productivo y en el que la sostenibilidad se ha convertido en una preocupación fundamental. En este artículo, exploraremos la historia de la coloración de los materiales y cómo las técnicas ancestrales se han transformado para un mundo totalmente industrializado, destacando la importancia de la sostenibilidad en la producción de colores y cómo los diseñadores pueden adoptar prácticas más sostenibles en su trabajo, mientras crean productos atractivos y visualmente impactantes en sus diferentes áreas.
           </p>
-          <button>
+          <button onClick={handleClick}>
             <img src={leer_mas} alt="leer_mas" className="float-right w-44" />
           </button>
         </div>
