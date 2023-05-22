@@ -13,7 +13,7 @@ export default function PrensaCard() {
 
   return (
     <div>
-      <div class="flex flex-col items-center bg-white rounded-3xl max-w-sm shadow-2xl md:flex-row md:max-w-5xl mx-5 p-5 mb-16">
+      <div className="flex flex-col items-center bg-white rounded-3xl max-w-sm shadow-2xl md:flex-row md:max-w-5xl mx-5 p-5 mb-16">
         <div className="md:basis-105">
         <img
           className="w-100"
@@ -27,10 +27,10 @@ export default function PrensaCard() {
         />
         </div>
         <div className="flex flex-col justify-start p-4 text-left">
-          <h1 class="mb-2 text-md font-raleway font-bold text-naranja">
+          <h1 className="mb-2 text-md font-raleway font-bold text-naranja">
             Telas PET: una opción innovadora y responsable, ¿o no?
           </h1>
-          <p class="mb-3 font-raleway text-justify leading-8 lg:w-97">
+          <p className="mb-3 font-raleway text-justify leading-8 lg:w-97">
             ¿Te has preguntado alguna vez qué sucede con las botellas de
             plástico después de que las utilizamos? ¿Sabías que existe una
             alternativa sostenible que permite reciclar estas botellas y
