@@ -76,7 +76,6 @@ nav a{
 }
 
 .top-100{
- 
   top: 75rem;
 }
 
@@ -91,3 +90,6 @@ nav a{
   transform: translate(-50%, -50%);
 }
 
+.text-xxs{
+  font-size: 0.5rem;;
+}

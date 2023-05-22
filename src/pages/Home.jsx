@@ -7,6 +7,9 @@ import regina from "../static/images/Recurso 13.png";
 import { Context } from "../context/context";
 import { useContext } from "react";
 import HomeModal from "../components/HomeModal";
+import deg_naranja from "../static/images/deg_naranja.png";
+import deg_azul from "../static/images/deg_azul.png"
+import deg_rosado from "../static/images/deg_rosa.png"
 
 function Home() {
   const { setShowModalHome } = useContext(Context);
@@ -103,14 +106,14 @@ function Home() {
 function GradientNaranja() {
   return (
     <div className="h-80 w-80 lg:w-1/3 rounded-full absolute lg:top-28 lg:right-20 top-56 right-0 z-0">
-      <img src="src/static/images/deg_naranja.png" alt="naranja" />
+      <img src={deg_naranja} alt="naranja" />
     </div>
   );
 }
 function GradientAzul() {
   return (
     <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-full md:top-3/4 lg:top-1/2 left-0 z-0">
-      <img src="src/static/images/deg_azul.png" alt="azul" />
+      <img src={deg_azul} alt="azul" />
     </div>
   );
 }
@@ -118,7 +121,7 @@ function GradientAzul() {
 function GradientRosado() {
   return (
     <div className="h-80 w-80 rounded-full absolute top-102 right-0 lg:top-100 lg:right-20 z-0">
-      <img src="src/static/images/deg_rosa.png" alt="rosado" />
+      <img src={deg_rosado} alt="rosado" />
     </div>
   );
 }
