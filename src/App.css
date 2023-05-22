@@ -1,25 +1,7 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
 
 .card {
   padding: 2em;
@@ -62,10 +44,9 @@ nav a{
   border-width: 2px;
 }
 
-.container{
-  display: grid;
-  justify-content: center;
-  column-gap: 2;
+.contenedor {
+  position: relative;
+  text-align: center;
 }
 
 
@@ -95,5 +76,18 @@ nav a{
 }
 
 .top-100{
-  top: 80rem;
+ 
+  top: 75rem;
 }
+
+.max-w-medio {
+  max-width: 23rem/* 320px */;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+

@@ -5,12 +5,11 @@ import banner from '../static/images/LOGO HEAD BANNER.png'
 export default function NavBar() {
   const [showMenu, setShowMenu] = useState(false)
 
-  const visibleMenu = "items-center justify-between w-full md:flex md:w-auto md:order-1"
-  const noVisibleMenu = "items-center justify-between hidden w-full md:flex md:w-auto md:order-1 "
+  const visibleMenu = "items-center md:justify-between w-full md:flex md:w-auto md:order-1"
+  const noVisibleMenu = "items-center md:justify-between hidden w-full md:flex md:w-auto md:order-1 "
 
   const clickShowMenu=()=>{
     setShowMenu(!showMenu)
-    console.log(showMenu)
   }
 
   return (
@@ -18,7 +17,7 @@ export default function NavBar() {
 <nav className="bg-verde-oscuro fixed w-full z-50 top-0 left-0 ">
   {/* <p className="mt-2 font-raleway text-4xl text-blanco">RE</p> */}
   <img src={banner} alt="Logo head banner" className="w-28 pt-3 px-3 mx-auto" />
-  <div className="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto pb-2">
+  <div className="max-w-screen-xl flex flex-wrap items-center md:justify-center mx-auto pb-2">
   <div className="flex md:order-2">
       <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false" onClick={clickShowMenu}>
         <span className="sr-only">Open main menu</span>
@@ -56,11 +55,11 @@ function CustomLink({ to, children, ...props }) {
   const isActive = useMatch({ path: resolvedPath.pathname, end: true });
 
   // const styleOpcion = "block py-2 pl-3 pr-4 text-blanco rounded hover:bg-blanco md:hover:bg-transparent md:hover:blanco md:p-0 md:dark:hover:text-rosado dark:text-blanco dark:hover:bg-blanco dark:hover:text-white md:dark:hover:bg-transparent dark:border-verde-oscuro"
-  const styleOpcion = "text-blanco md:hover:blanco mt-2 hover:text-rosado font-raleway lg:mx-4 xl:mx-8"
+  const styleOpcion = "text-blanco mt-2 hover:text-rosado font-cooper text-xs 2xl:text-md lg:mx-4 xl:mx-8"
 
-  const styleSelected = "block text-rosado bg-verde-oscuro font-raleway lg:mx-4 xl:mx-8"
+  const styleSelected = "text-rosado  font-cooper text-xs 2xl:text-md lg:mx-4 xl:mx-8"
 
-  // const styleSelected = "block py-2 pl-3 pr-4 text-blanco bg-rosado rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+
 
   return (
     <div className={isActive ? styleSelected : styleOpcion}>

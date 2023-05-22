@@ -6,13 +6,17 @@ export function ContextProvider(props) {
   const [showModal, setShowModal] = useState(false);
   const [modalContent, setModalContent] = useState({ tittle: "", body: "" });
 
+  const [showModalHome, setShowModalHome] = useState(false)
+
   return (
     <Context.Provider
       value={{
         showModal,
         modalContent,
+        showModalHome,
         setShowModal,
-        setModalContent
+        setModalContent,
+        setShowModalHome
       }}
     >
       {props.children}
