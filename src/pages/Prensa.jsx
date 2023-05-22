@@ -4,6 +4,7 @@ import CardSostenible from '../components/CardSostenible'
 import CardImpacto from '../components/CardImpacto'
 import ModalTelasPet from '../components/ModalTelasPet'
 import ModalMadera from '../components/ModalMadera'
+import ModalSostenibilidad from '../components/ModalSostenibilidad'
 
 function Prensa() {
   return (
@@ -14,6 +15,7 @@ function Prensa() {
       <CardImpacto/>
       <ModalTelasPet/>
       <ModalMadera/>
+      <ModalSostenibilidad/>
     </div>
   )
 }

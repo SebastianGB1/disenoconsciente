@@ -5,14 +5,10 @@ import firma_renato from "../static/images/firma_renato.png";
 import leer_mas from '../static/images/leer_mas.png'
 
 export default function PrensaCard() {
-  const { setShowModal, setModalContent } = useContext(Context);
+  const { setShowModalSostenibilidad } = useContext(Context);
 
   const handleClick = () => {
-    setShowModal(true);
-    setModalContent({
-      tittle: "Prueba",
-      body: 'Se supone que aca va descripcion mas larga del articulo. El boton "Ver mas" reenvia a google por ahora',
-    });
+    setShowModalSostenibilidad(true);
   };
 
   return (
@@ -37,7 +33,7 @@ export default function PrensaCard() {
           <p className="mb-3 font-raleway text-justify leading-8 lg:w-97">
           Tanto la sostenibilidad como el diseño sostenible se ha convertido en un tema cada vez más importante en la industria del diseño. A medida que la conciencia sobre el impacto ambiental y social de nuestras acciones, los diseñadores tienen la responsabilidad de adoptar prácticas más sostenibles en su trabajo. En este artículo, discutiremos cómo los diseñadores emergentes pueden comenzar a diseñar de manera más consciente en Medellín, Colombia. También hablaremos sobre la importancia de ser fiel a la ética y a las inclinaciones personales como diseñador a la hora de crear. Al seguir estas pautas, los diseñadores emergentes pueden ser parte de una comunidad de diseñadores que trabaja para proteger nuestro planeta, mientras se adaptan a los desafíos que presenta la creciente demanda de productos sostenibles.
           </p>
-          <button>
+          <button onClick={handleClick}>
             <img src={leer_mas} alt="leer_mas" className="float-right w-44" />
           </button>
         </div>

@@ -9,6 +9,7 @@ export function ContextProvider(props) {
   const [showModalHome, setShowModalHome] = useState(false)
   const [showModalPet, setShowModalPet] = useState(false)
   const [showModalMadera, setShowModalMadera] = useState(false)
+  const [showModalSostenibilidad, setShowModalSostenibilidad] = useState(false)
 
   return (
     <Context.Provider
@@ -18,11 +19,13 @@ export function ContextProvider(props) {
         showModalHome,
         showModalPet,
         showModalMadera,
+        showModalSostenibilidad,
         setShowModal,
         setModalContent,
         setShowModalHome,
         setShowModalPet,
-        setShowModalMadera
+        setShowModalMadera,
+        setShowModalSostenibilidad
       }}
     >
       {props.children}
