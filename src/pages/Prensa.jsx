@@ -1,17 +1,21 @@
-import PrensaCard from '../components/PrensaCard'
-import PrensaModal from '../components/PrensaModal'
+import CardTelasPet from '../components/CardTelasPet'
+import CardSustituyendoMadera from '../components/CardSustituyendoMadera'
+import CardSostenible from '../components/CardSostenible'
+import CardImpacto from '../components/CardImpacto'
+import ModalTelasPet from '../components/ModalTelasPet'
 
 function Prensa() {
   return (
-    <div className='container'>
-      <PrensaModal></PrensaModal>
-      <PrensaCard></PrensaCard>
-      <PrensaCard></PrensaCard>
-      <PrensaCard></PrensaCard>
-      <PrensaCard></PrensaCard>
-
+    <div className='flex flex-col items-center mb-20'>
+      <CardTelasPet />
+      <CardSustituyendoMadera/>
+      <CardSostenible/>
+      <CardImpacto/>
+      <ModalTelasPet/>
     </div>
   )
 }
+
+
 
 export default Prensa

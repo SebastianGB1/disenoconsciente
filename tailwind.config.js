@@ -32,10 +32,11 @@ export default {
         cooper: ["cooper", "sans-serif"],
       },
       spacing: {
+        65: "17rem",
+        97: "40rem",
         100: "80rem",
         102: "90rem",
-        maxw: "20rem",
-        65: "17rem",
+        105:"150rem"
       },
     },
   },

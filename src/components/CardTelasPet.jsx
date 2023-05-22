@@ -5,22 +5,18 @@ import firma_reinaldo from "../static/images/firma_reinaldo.png";
 import leer_mas from '../static/images/leer_mas.png'
 
 export default function PrensaCard() {
-  const { setShowModal, setModalContent } = useContext(Context);
+  const { setShowModalPet, showModalPet } = useContext(Context);
 
   const handleClick = () => {
-    setShowModal(true);
-    setModalContent({
-      tittle: "Prueba",
-      body: 'Se supone que aca va descripcion mas larga del articulo. El boton "Ver mas" reenvia a google por ahora',
-    });
+    setShowModalPet(true);
   };
 
   return (
     <div>
-      <div class="flex flex-col items-center bg-white rounded-3xl max-w-sm shadow-2xl md:flex-row md:max-w-5xl mx-5 p-5">
+      <div class="flex flex-col items-center bg-white rounded-3xl max-w-sm shadow-2xl md:flex-row md:max-w-5xl mx-5 p-5 mb-16">
         <div className="md:basis-105">
         <img
-          className="object-cover  basis-1/4"
+          className="w-100"
           src={telas_pet}
           alt="Telas pet"
         />
@@ -34,7 +30,7 @@ export default function PrensaCard() {
           <h1 class="mb-2 text-md font-raleway font-bold text-naranja">
             Telas PET: una opción innovadora y responsable, ¿o no?
           </h1>
-          <p class="mb-3 font-raleway text-justify leading-8">
+          <p class="mb-3 font-raleway text-justify leading-8 lg:w-97">
             ¿Te has preguntado alguna vez qué sucede con las botellas de
             plástico después de que las utilizamos? ¿Sabías que existe una
             alternativa sostenible que permite reciclar estas botellas y
@@ -50,7 +46,7 @@ export default function PrensaCard() {
             más informada sobre el uso de telas PET en tu propia producción de
             moda sostenible.
           </p>
-          <button>
+          <button onClick={handleClick}>
             <img src={leer_mas} alt="leer_mas" className="float-right w-44" />
           </button>
         </div>

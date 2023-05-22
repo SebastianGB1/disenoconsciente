@@ -154,8 +154,8 @@ export default function HomeModal() {
                     <h3 className="text-cafe font-raleway text-sm sm:text-base mx-5  mt-16">
                 Variaciones 
                     </h3>
-                    <img src={variacionesLogo} alt="logo" className="mx-5 sm:mx-10 md:mx-24 lg:mx-32 my-3 md:my-9"/>
-                    <img src={variaciones2Logo} alt="logo" className="mx-5 sm:mx-10 md:mx-24 lg:mx-32 my-3 md:my-9"/>
+                    <img src={variacionesLogo} alt="variaciones1" className="mx-5 sm:mx-10 md:mx-24 lg:mx-32 my-3 md:my-9"/>
+                    <img src={variaciones2Logo} alt="variaciones2" className="mx-5 sm:mx-10 md:mx-24 lg:mx-32 my-3 md:my-9"/>
                 
                     <p className="text-2xl md:text-3xl font-cooper text-verde-oscuro mb-5 relative self-end mr-10 mt-20 z-20 ">
                 Elementos gráficos
@@ -163,18 +163,18 @@ export default function HomeModal() {
                 <h3 className="text-cafe font-raleway text-sm sm:text-base mx-5">
                 Ilustraciones de colores sólidos 
                     </h3>
-                    <img src={ilustraciones} alt="logo" className="mx-5 sm:mx-10 md:mx-24 lg:mx-32 my-3 md:my-5"/>
+                    <img src={ilustraciones} alt="ilustraciones" className="mx-5 sm:mx-10 md:mx-24 lg:mx-32 my-3 md:my-5"/>
                     <h3 className="text-cafe font-raleway text-sm sm:text-base mx-5 mt-9">
                     Puntos degradados 
                     </h3>
-                    <img src={degradados} alt="logo" className="mx-5 sm:mx-10 md:mx-24 lg:mx-32 my-3 md:my-5"/>
+                    <img src={degradados} alt="degradados" className="mx-5 sm:mx-10 md:mx-24 lg:mx-32 my-3 md:my-5"/>
                     <div className="flex flex-row mx-5 mt-9">
                     <h3 className="text-cafe font-raleway text-sm sm:text-base ">
                     Imágenes generadas por IA 
                     </h3>
               <img src={estrella} alt="estrella" className="w-2 h-2 float-left"/>
                     </div>
-                    <img src={imagenesIA} alt="logo" className="mx-5 sm:mx-10 md:mx-24 lg:mx-32 my-3 md:my-5"/>
+                    <img src={imagenesIA} alt="IA" className="mx-5 sm:mx-10 md:mx-24 lg:mx-32 my-3 md:my-5"/>
                 <div >
                 
               <p className="text-cafe font-raleway text-xxs  mx-10 mt-9 mb-5">
