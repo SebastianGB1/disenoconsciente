@@ -49,7 +49,8 @@ export function ContextProvider(props) {
         setShowModalImpacto,
         setShowDetailPet,
         setShowDetailTincion,
-        getComentariosPet
+        getComentariosPet,
+        getComentariosTincion
       }}
     >
       {props.children}

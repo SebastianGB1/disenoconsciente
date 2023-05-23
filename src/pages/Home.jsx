@@ -8,24 +8,24 @@ import { Context } from "../context/context";
 import { useContext } from "react";
 import HomeModal from "../components/HomeModal";
 import deg_naranja from "../static/images/deg_naranja.png";
-import deg_azul from "../static/images/deg_azul.png"
-import deg_rosado from "../static/images/deg_rosa.png"
+import deg_azul from "../static/images/deg_azul.png";
+import deg_rosado from "../static/images/deg_rosa.png";
 
 function Home() {
   const { setShowModalHome } = useContext(Context);
 
-  const handleClic =()=>{
-    setShowModalHome(true)
-  }
+  const handleClic = () => {
+    setShowModalHome(true);
+  };
 
   return (
     <div className="mx-10 md:mx-20 lg:mx-48 mb-20">
-      <HomeModal/>
+      <HomeModal />
       <GradientNaranja />
       <GradientAzul />
       <ReTittle />
       <div className="my-32">
-        <p className="text-2xl font-bold text-verde-oscuro mb-5 relative z-20">
+        <p className="text-2xl font-bold font-cooper text-verde-oscuro mb-5 relative z-20">
           ¿Qué es el diseño consciente?
         </p>
         <img
@@ -56,48 +56,68 @@ function Home() {
       </div>
       <div className="mt-20">
         <div className="flex flex-row justify-center relative z-20">
-          <p className="text-2xl font-bold text-verde-oscuro mb-5 mr-2">
+          <p className="text-2xl font-bold text-verde-oscuro font-cooper mb-5 mr-2">
             ¿Qué es
           </p>
           <p className="text-2xl font-raleway text-verde-oscuro">RE</p>
           <p className="text-2xl font-bold text-verde-oscuro mb-5">?</p>
         </div>
         <p className="z-20 font-raleway relative text-justify">
-          El diseño consciente forma parte de un movimiento cada vez más
-          creciente y necesario de sensibilización social, ecológica, económica
-          y espiritual: cada vez somos más los diseñadores, emprendedores y
-          empresas que luchamos y trabajamos por construir un mundo más
-          responsable, más justo, más sostenible o más empoderado. Todavía no es
-          una tendencia completamente adoptada, pero nuestro proyecto busca
-          cambiar esto, trabajando en colaboración con empresas y marcas locales
-          y nacionales para crear una comunidad consciente en el Área
-          Metropolitana y los alrededores. Esta es la mejor manera de asegurar
-          el éxito del proyecto, y de garantizar que la adopción del diseño
-          consciente se convierta en una práctica común y sostenible en el
-          futuro.
+          Este proyecto tiene como objetivo promover la adopción del diseño
+          consciente, y los múltiples beneficios que este enfoque puede traer
+          para empresas grandes y pequeñas, así como para la sociedad, la
+          economía y el medio ambiente en general. Para lograr esto, se ha
+          creado una página web que presenta la información de manera clara y
+          amigable para los usuarios, pero que también tiene un diseño atractivo
+          y moderno para capturar la atención de la audiencia. Apoyando esta
+          idea, están Renato (diseñador de espacios), Reinaldo (diseñador de
+          modas), Rebecca (diseñadora de producto) y Regina (diseñadora
+          gráfica), los personajes de RE que ayudarán a guiarnos en la lectura
+          de los temas.
         </p>
       </div>
       <div className="flex flex-col justify-between my-10 z-20 relative items-center md:flex-row md:my-20">
-        <img src={renato} alt="renato" className="w-40 h-40 my-3 md:w-52 md:h-52" />
-        <img src={reinaldo} alt="Reinaldo" className="w-40 h-40 my-3 md:w-52 md:h-52" />
-        <img src={rebeca} alt="Rebeca" className="w-40 h-40 my-3 md:w-52 md:h-52" />
-        <img src={regina} alt="Regina" className="w-40 h-40 my-3 md:w-52 md:h-52" />
+        <img
+          src={renato}
+          alt="renato"
+          className="w-40 h-40 my-3 md:w-52 md:h-52"
+        />
+        <img
+          src={reinaldo}
+          alt="Reinaldo"
+          className="w-40 h-40 my-3 md:w-52 md:h-52"
+        />
+        <img
+          src={rebeca}
+          alt="Rebeca"
+          className="w-40 h-40 my-3 md:w-52 md:h-52"
+        />
+        <img
+          src={regina}
+          alt="Regina"
+          className="w-40 h-40 my-3 md:w-52 md:h-52"
+        />
       </div>
       <p className="z-20 font-raleway relative text-justify">
-        Este proyecto tiene como objetivo promover la adopción del diseño
-        consciente, y los múltiples beneficios que este enfoque puede traer para
-        empresas grandes y pequeñas, así como para la sociedad, la economía y el
-        medio ambiente en general. Para lograr esto, se ha creado una página web
-        que presenta la información de manera clara y amigable para los
-        usuarios, pero que también tiene un diseño atractivo y moderno para
-        capturar la atención de la audiencia. Apoyando esta idea, están Renato
-        (diseñador de espacios), Reinaldo (diseñador de modas), Rebecca
-        (diseñadora de producto) y Regina (diseñadora gráfica), los personajes
-        de RE que ayudarán a guiarnos en la lectura de los temas.
+        El diseño consciente forma parte de un movimiento cada vez más creciente
+        y necesario de sensibilización social, ecológica, económica y
+        espiritual: cada vez somos más los diseñadores, emprendedores y empresas
+        que luchamos y trabajamos por construir un mundo más responsable, más
+        justo, más sostenible o más empoderado. Todavía no es una tendencia
+        completamente adoptada, pero nuestro proyecto busca cambiar esto,
+        trabajando en colaboración con empresas y marcas locales y nacionales
+        para crear una comunidad consciente en el Área Metropolitana y los
+        alrededores. Esta es la mejor manera de asegurar el éxito del proyecto,
+        y de garantizar que la adopción del diseño consciente se convierta en
+        una práctica común y sostenible en el futuro.
       </p>
+
       <GradientRosado />
-      <button className="bg-white py-3 px-8 mt-10 text-2xl rounded-xl font-raleway font-bold hover:bg-verde-oscuro hover:text-blanco" onClick={handleClic}>
-        Concepto grafico
+      <button
+        className="bg-white py-3 px-8 mt-10 text-2xl rounded-xl font-raleway font-bold hover:bg-verde-oscuro hover:text-blanco"
+        onClick={handleClic}
+      >
+        Concepto gráfico
       </button>
     </div>
   );

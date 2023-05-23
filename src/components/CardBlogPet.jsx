@@ -3,7 +3,7 @@ import { Context } from "../context/context";
 import ver from "../static/images/recurso 4_blog.png";
 
 export default function CardBlogPet() {
-  const { setShowDetailPet, setShowDetailTincion, getComentariosPet } = useContext(Context);
+  const { setShowDetailPet, setShowDetailTincion, getComentariosPet, getComentariosTincion } = useContext(Context);
 
   const handleClickPet = () => {
     setShowDetailPet(true);
@@ -12,6 +12,7 @@ export default function CardBlogPet() {
 
   const handleClickTincion = () => {
     setShowDetailTincion(true);
+    getComentariosTincion();
   };
 
   return (

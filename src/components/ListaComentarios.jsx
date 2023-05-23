@@ -1,10 +1,10 @@
 import React, { useEffect, useContext } from "react";
 import { Context } from "../context/context";
 
-export default function ListaComentarios() {
-  const { comentariosPet } = useContext(Context);
+export default function ListaComentarios({comentarios}) {
+  
 
-  return comentariosPet.map((comentario) => {
+  return comentarios.map((comentario) => {
     return(
         <div className="flex justify-center">
             <ComentarioCard comentario={comentario}></ComentarioCard>

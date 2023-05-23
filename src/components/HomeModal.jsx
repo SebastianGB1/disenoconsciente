@@ -177,7 +177,7 @@ export default function HomeModal() {
                     <img src={imagenesIA} alt="IA" className="mx-5 sm:mx-10 md:mx-24 lg:mx-32 my-3 md:my-5"/>
                 <div >
                 
-              <p className="text-cafe font-raleway text-xxs  mx-10 mt-9 mb-5">
+              <p className="text-black font-raleway text-xxs  mx-10 mt-9 mb-5">
               <img src={estrella} alt="estrella" className="w-2 h-2 float-left"/>
                 Las imágenes son generadas por BlueWillow, un emocionante generador de imágenes por Inteligencia Artificial (IA) que ha revolucionado la forma en que se crea y se imagina el arte visual. Utilizando técnicas avanzadas de aprendizaje profundo, BlueWillow puede generar imágenes impresionantes, realistas y detalladas a partir de descripciones de texto. Esta poderosa herramienta utiliza una vasta cantidad de datos visuales previamente entrenados para comprender las sutilezas de la forma, el color, la textura y la composición, y luego traduce esas descripciones en imágenes impactantes. BlueWillow ha abierto nuevas fronteras creativas y ha permitido a artistas, diseñadores y creadores explorar posibilidades ilimitadas en el ámbito visual, ofreciendo una herramienta innovadora para la expresión artística y la comunicación visual.</p>
                 </div>

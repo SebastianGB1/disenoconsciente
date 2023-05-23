@@ -6,7 +6,7 @@ import fecha from "../static/images/fecha_renato.png";
 
 import recurso33 from "../static/images/recurso 33_soste.png";
 import recurso35 from "../static/images/recurso 35_madera.png";
-import recurso24 from "../static/images/recurso 24_pet.png";
+import recurso34 from "../static/images/recurso 34_soste.png";
 
 export default function HomeModal() {
   const { showModalSostenibilidad, setShowModalSostenibilidad } =
@@ -91,8 +91,8 @@ export default function HomeModal() {
                     </p>
                   </li>
                   <img
-                    src={recurso24}
-                    alt="Recurso 24"
+                    src={recurso34}
+                    alt="Recurso 34"
                     className="float-left w-40 md:w-60 mt-3 mr-3"
                   />
                   <li>
