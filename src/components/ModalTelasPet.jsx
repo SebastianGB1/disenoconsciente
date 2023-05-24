@@ -4,9 +4,9 @@ import cerrar from "../static/images/cerrarModal.png";
 import { Context } from "../context/context";
 import fecha_reinaldo from "../static/images/fecha_reinaldo.png";
 import no_mas_botellas from '../static/images/no_mas_botellas.png'
-import recurso22 from '../static/images/recurso 22_pet.png'
-import recurso23 from '../static/images/recurso 23_pet.png'
-import recurso24 from '../static/images/recurso 24_pet.png'
+import recurso22 from '../static/images/Recurso 22_pet.png'
+import recurso23 from '../static/images/Recurso 23_pet.png'
+import recurso24 from '../static/images/Recurso 24_pet.png'
 
 export default function HomeModal() {
   const { showModalPet, setShowModalPet } = useContext(Context);
