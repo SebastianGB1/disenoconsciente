@@ -8,6 +8,8 @@ import recurso33 from "../static/images/recurso 33_soste.png";
 import recurso35 from "../static/images/recurso 35_madera.png";
 import recurso34 from "../static/images/recurso 34_soste.png";
 
+import { useNavigate } from "react-router-dom";
+
 export default function HomeModal() {
   const { showModalSostenibilidad, setShowModalSostenibilidad } =
     useContext(Context);
@@ -15,6 +17,9 @@ export default function HomeModal() {
   const handleClose = () => {
     setShowModalSostenibilidad(false);
   };
+
+  const nav = useNavigate();
+  const navigateClick = () => nav("/disenoconsciente/directorio");
   return (
     <>
       <Modal open={showModalSostenibilidad} onClose={handleClose}>
@@ -156,12 +161,13 @@ export default function HomeModal() {
                   sostenible, mientras se apoya a la economía local y se fomenta
                   la innovación y la creatividad en la industria del diseño.
                 </p>
-                <a
-                  href="/disenoconsciente/directorio"
+                <button
+                  onClick={navigateClick}
+                  // href="/disenoconsciente/directorio"
                   className="self-start bg-rosado font-raleway p-1 rounded-lg"
                 >
                   Ver directorio de proveedores
-                </a>
+                </button>
 
                 <h2 className="font-extrabold font-raleway mb-5 mt-16">
                   Conclusión
