@@ -2,19 +2,19 @@ import { useContext } from "react";
 import Modal from "@mui/material/Modal";
 import cerrar from '../static/images/cerrarModal.png'
 import { Context } from "../context/context";
-import rec16 from '../static/images/recurso_16.png'
-import rec17 from '../static/images/recurso_17.png'
-import rec18 from '../static/images/recurso_18.png'
-import rec19 from '../static/images/recurso_19.png'
-import rec20 from '../static/images/recurso_20.png'
-import rec21 from '../static/images/recurso_21.png'
+import rec16 from '../static/images/Recurso_16.png'
+import rec17 from '../static/images/Recurso_17.png'
+import rec18 from '../static/images/Recurso_18.png'
+import rec19 from '../static/images/Recurso_19.png'
+import rec20 from '../static/images/Recurso_20.png'
+import rec21 from '../static/images/Recurso_21.png'
 import logo from '../static/images/recurso_24.png'
-import variaciones2Logo from '../static/images/recurso_26.png'
-import variacionesLogo from '../static/images/recurso_25.png'
-import ilustraciones from '../static/images/recurso_27.png'
-import degradados from '../static/images/recurso_28.png'
-import imagenesIA from '../static/images/recurso_29.png'
-import estrella from '../static/images/recurso_30.png'
+import variaciones2Logo from '../static/images/Recurso_26.png'
+import variacionesLogo from '../static/images/Recurso_25.png'
+import ilustraciones from '../static/images/Recurso_27.png'
+import degradados from '../static/images/Recurso_28.png'
+import imagenesIA from '../static/images/Recurso_29.png'
+import estrella from '../static/images/Recurso_30.png'
 
 export default function HomeModal() {
   const { showModalHome, setShowModalHome } = useContext(Context);
