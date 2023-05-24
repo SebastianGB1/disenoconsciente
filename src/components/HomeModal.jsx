@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import Modal from "@mui/material/Modal";
-import cerrar from '../static/images/recurso 15.png'
+import cerrar from '../static/images/cerrarModal.png'
 import { Context } from "../context/context";
 import rec16 from '../static/images/recurso 16.png'
 import rec17 from '../static/images/recurso 17.png'
