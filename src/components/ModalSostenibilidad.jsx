@@ -4,9 +4,9 @@ import cerrar from "../static/images/cerrarModal.png";
 import { Context } from "../context/context";
 import fecha from "../static/images/fecha_renato.png";
 
-import recurso33 from "../static/images/recurso 33_soste.png";
-import recurso35 from "../static/images/recurso 35_madera.png";
-import recurso34 from "../static/images/recurso 34_soste.png";
+import recurso33 from "../static/images/Recurso 33_soste.png";
+import recurso35 from "../static/images/Recurso 35_madera.png";
+import recurso34 from "../static/images/Recurso 34_soste.png";
 
 import { useNavigate } from "react-router-dom";
 

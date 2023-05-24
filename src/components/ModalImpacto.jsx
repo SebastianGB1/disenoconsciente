@@ -4,11 +4,11 @@ import cerrar from "../static/images/cerrarModal.png";
 import { Context } from "../context/context";
 import fecha from "../static/images/fecha_regina.png";
 
-import recurso39 from "../static/images/recurso 39_impacto.png";
+import recurso39 from "../static/images/Recurso 39_impacto.png";
 import recurso41 from "../static/images/Recurso 41_impacto.png";
 import recurso42 from "../static/images/Recurso 42_impacto.png";
 import recurso43 from "../static/images/Recurso 43_impacto.png";
-import recurso40 from "../static/images/recurso 40_impacto.png";
+import recurso40 from "../static/images/Recurso 40_impacto.png";
 
 export default function HomeModal() {
   const { showModalImpacto, setShowModalImpacto } = useContext(Context);

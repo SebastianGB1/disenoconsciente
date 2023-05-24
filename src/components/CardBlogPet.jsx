@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { Context } from "../context/context";
-import ver from "../static/images/recurso 4_blog.png";
+import ver from "../static/images/Recurso 4_blog.png";
 
 export default function CardBlogPet() {
   const { setShowDetailPet, setShowDetailTincion, getComentariosPet, getComentariosTincion } = useContext(Context);
