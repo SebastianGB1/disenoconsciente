@@ -7,5 +7,5 @@ export default defineConfig({
   server:{
     host:true
   },
-  base:"https://github.com/SebastianGB1/disenoconsciente/"
+  base:"https://github.com/SebastianGB1/"
 })
