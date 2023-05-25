@@ -64,7 +64,7 @@ export default function DetailBlogPet() {
                 recurso para la revolución de la industria de la moda. (Para
                 leer un artículo y tener mayor información sobre las ventajas y
                 desventajas de las telas PET de{" "}
-                <a href="#" className="bg-rosado px-2 py-1 rounded-lg">
+                <a href="#" className="bg-rosado px-2 py-1 rounded-lg hover:bg-verde-claro hover:text-white">
                   click aquí
                 </a>
                 )

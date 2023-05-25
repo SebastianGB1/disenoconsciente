@@ -16,9 +16,9 @@ export default function HomeModal() {
   };
   return (
     <>
-      <Modal open={showModalMadera} onClose={handleClose}>
+      <Modal open={showModalMadera} onClose={handleClose} className="overflow-auto py-10">
         <>
-          <div className="my-1 overflow-x-hidden overflow-y-auto fixed inset-0 z-50 ">
+          {/* <div className="my-1 overflow-x-hidden overflow-y-auto fixed inset-0 z-50 "> */}
             <div className="relative w-auto mx-auto max-w-medio sm:max-w-2xl md:max-w-3xl lg:max-w-4xl">
               {/*content*/}
               <div className="border-0 rounded-3xl shadow-lg relative flex flex-col w-full px-5 md:px-20 bg-blanco outline-none focus:outline-none">
@@ -238,7 +238,7 @@ export default function HomeModal() {
                 </p>
               </div>
             </div>
-          </div>
+          {/* </div> */}
         </>
       </Modal>
     </>

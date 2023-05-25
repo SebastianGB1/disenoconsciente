@@ -66,7 +66,7 @@ export default function HomeModal() {
                 estás pueden ser tratadas en su impacto al medio ambiente. (Para
                 leer más sobre la coloración durante la historia y en los
                 diferentes tipos de sustratos da{" "}
-                <a href="#" className="bg-rosado px-2 py-1 rounded-lg">
+                <a href="#" className="bg-rosado px-2 py-1 rounded-lg hover:bg-verde-claro hover:text-white">
                   click aquí
                 </a>
                 )

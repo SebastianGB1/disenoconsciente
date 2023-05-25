@@ -16,9 +16,9 @@ export default function HomeModal() {
   };
   return (
     <>
-      <Modal open={showModalPet} onClose={handleClose}>
+      <Modal open={showModalPet} onClose={handleClose} className="overflow-auto py-10">
         <>
-          <div className="my-1 overflow-x-hidden overflow-y-auto fixed inset-0 z-50 ">
+          {/* <div className="my-1 overflow-x-hidden overflow-y-auto fixed inset-0 z-50 "> */}
             <div className="relative w-auto mx-auto max-w-medio sm:max-w-2xl md:max-w-3xl lg:max-w-4xl">
               {/*content*/}
               <div className="border-0 rounded-3xl shadow-lg relative flex flex-col w-full px-5 md:px-20 bg-blanco outline-none focus:outline-none">
@@ -81,7 +81,7 @@ export default function HomeModal() {
                 para la producción de prendas de alta calidad y con un enfoque sostenible, pero no son una solución perfecta, a pesar de sus limitaciones y desventajas, su uso puede ayudar a reducir la contaminación ambiental y a crear una industria de moda más responsable y consciente del medio ambiente. Para seguir explorando esta opción, es importante seguir investigando y desarrollando tecnologías más avanzadas para la producción de telas PET, así como fomentar el uso responsable de estas telas por parte de los consumidores y la industria de la moda.</p>
               </div>
             </div>
-          </div>
+          {/* </div> */}
         </>
       </Modal>
     </>
