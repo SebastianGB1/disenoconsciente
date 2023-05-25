@@ -80,7 +80,7 @@ export default function HomeModal() {
                 className="placeholder-cafe block p-2.5 w-full text-sm  rounded-lg"
                 value={comentario}
               />
-              <button className="bg-azul self-center p-2 rounded-xl text-blanco m-5 font-bold text-2xl" onClick={addComentario}>
+              <button className="bg-azul self-center p-2 rounded-xl text-blanco m-5 font-bold text-2xl hover:bg-verde-oscuro" onClick={addComentario}>
                 publicar {">"}
               </button>
               <ListaComentarios comentarios={comentariosTincion} />

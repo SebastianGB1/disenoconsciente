@@ -14,7 +14,7 @@ export default function PrensaCard() {
 
   return (
     <div>
-      <div className="flex flex-col items-center bg-white rounded-3xl max-w-sm shadow-2xl md:flex-row md:max-w-5xl mx-5 p-5 mb-16">
+      <div className="flex flex-col items-center bg-white rounded-3xl max-w-sm shadow-2xl md:flex-row md:max-w-5xl mx-5 p-5 mb-16 relative z-20">
         <div className="md:basis-105">
         <img
           className="w-100"

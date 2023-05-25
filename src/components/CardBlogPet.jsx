@@ -17,7 +17,7 @@ export default function CardBlogPet() {
 
   return (
     <div>
-      <div className="flex flex-col items-center bg-white rounded-3xl max-w-sm shadow-2xl md:flex-row md:max-w-5xl mx-5 p-5 mb-16">
+      <div className="flex flex-col items-center bg-white rounded-3xl max-w-sm shadow-2xl md:flex-row md:max-w-5xl mx-5 p-5 mb-16 relative z-20">
         <div className="text-left">
           <h1 className="mb-2 text-md font-raleway font-bold text-cafe">
             Hablemos sobre…
@@ -30,7 +30,7 @@ export default function CardBlogPet() {
             <img src={ver} alt="leer_mas" className="w-28 ml-5" />
           </button>
         </div>
-        <div className="flex flex-col items-center bg-white rounded-3xl max-w-sm shadow-2xl md:flex-row md:max-w-5xl mx-5 p-5 mb-16">
+        <div className="flex flex-col items-center bg-white rounded-3xl max-w-sm shadow-2xl md:flex-row md:max-w-5xl mx-5 p-5 mb-16 relative z-20">
         <div className="text-left">
           <h1 className="mb-2 text-md font-raleway font-bold text-azul">
             Hablemos sobre…

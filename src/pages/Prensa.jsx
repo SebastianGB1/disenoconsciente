@@ -32,14 +32,14 @@ function Prensa() {
 
 function GradientRosado() {
   return (
-    <div className="h-80 w-80 lg:w-2/5 rounded-full absolute lg:top-0 lg:right-10 top-98 right-0 z-0 opacity-70">
+    <div className="h-80 w-80 lg:w-2/5 rounded-full absolute lg:top-0 lg:right-10 top-98 right-0 z-0">
       <img src={deg_rosado} alt="rosa" />
     </div>
   );
 }
 function GradientAzul() {
   return (
-    <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-full md:top-3/4 lg:top-1/2 left-0 z-0 opacity-90">
+    <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-full md:top-3/4 lg:top-1/2 left-0 z-0 ">
       <img src={deg_azul} alt="azul" />
     </div>
   );
@@ -47,7 +47,7 @@ function GradientAzul() {
 
 function GradientNaranja() {
   return (
-    <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-105 md:top-3/4 lg:top-103 md:right-24 rigth-0 z-0 opacity-70">
+    <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-105 md:top-3/4 lg:top-103 md:right-24 rigth-0 z-0">
       <img src={deg_naranja} alt="naranaja" />
     </div>
   );

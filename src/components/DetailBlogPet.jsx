@@ -80,7 +80,7 @@ export default function DetailBlogPet() {
               />
               <button
                 onClick={addComentario}
-                className="bg-azul font-bold self-center p-2 rounded-xl text-blanco m-5 text-2xl"
+                className="bg-azul font-bold self-center p-2 rounded-xl text-blanco m-5 text-2xl hover:bg-verde-oscuro"
               >
                 publicar {">"}
               </button>
