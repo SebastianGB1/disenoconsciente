@@ -55,7 +55,7 @@ function GradientNaranja() {
 
 function GradientVerde() {
   return (
-    <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-105 md:top-3/4 lg:top-100 md:right-70 rigth-0 z-0 opacity-50">
+    <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-102 md:top-3/4 lg:top-100 right-44 md:right-97 z-0 opacity-50">
       <img src={deg_verde} alt="verde" />
     </div>
   );
