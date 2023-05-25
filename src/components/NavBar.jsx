@@ -27,19 +27,19 @@ export default function NavBar() {
   <div className={showMenu ? visibleMenu : noVisibleMenu} id="navbar-sticky">
     <ul className="flex flex-col md:p-0  font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
       <li>
-        <CustomLink to="disenoconsciente/" className="font-kiona" >INICIO</CustomLink>
+        <CustomLink to="/" className="font-kiona" >INICIO</CustomLink>
       </li>
       <li>
-        <CustomLink to="disenoconsciente/prensa">PRENSA</CustomLink>
+        <CustomLink to="/prensa">PRENSA</CustomLink>
       </li>
       <li>
-        <CustomLink to="disenoconsciente/blog" >BLOG</CustomLink>
+        <CustomLink to="/blog" >BLOG</CustomLink>
       </li>
       <li>
-        <CustomLink to="disenoconsciente/directorio" >DIRECTORIO PROVEEDORES</CustomLink>
+        <CustomLink to="/directorio" >DIRECTORIO PROVEEDORES</CustomLink>
       </li>
       <li>
-        <CustomLink to="disenoconsciente/contacto">CONTACTO</CustomLink>
+        <CustomLink to="/contacto">CONTACTO</CustomLink>
       </li>
     </ul>
   </div>

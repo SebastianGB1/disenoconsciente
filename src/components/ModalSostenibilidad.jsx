@@ -19,7 +19,7 @@ export default function HomeModal() {
   };
 
   const nav = useNavigate();
-  const navigateClick = () => nav("/disenoconsciente/directorio");
+  const navigateClick = () => nav("/directorio");
   return (
     <>
       <Modal open={showModalSostenibilidad} onClose={handleClose}>

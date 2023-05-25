@@ -3,12 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://re-disenoconsciente.com",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "predeploy":"npm run build && echo re-disenoconsciente.com > ./dist/CNAME",
+    "predeploy":"npm run build && echo re-disenoconsciente.com > ./dist/CNAME && copy 404.html .\\dist\\404.html",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
