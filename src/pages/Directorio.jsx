@@ -12,32 +12,14 @@ import rec119 from "../static/images/Recurso 119.png";
 import rec120 from "../static/images/Recurso 120.png";
 import rec121 from "../static/images/Recurso 121.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import ModalPinturas from "../components/directorio/ModalPinturas";
+import ModalIluminacion from "../components/directorio/ModalIluminacion";
+import ModalHogar from "../components/directorio/ModalHogar";
 
-function Directorio() {
-  
-
-  const [seleccion, setSeleccion] = useState("");
-  const irAInicio = () => {
-    setSeleccion("");
-  };
-
-  return (
-    <div className="mx-16 md:mx-32">
-      {/* {seleccion == "" ? (
-        <Inicio setSeleccion={setSeleccion} />
-      ) : seleccion == "renato" ? (
-        <Renato handleClose={irAInicio} />
-      ) : null}
-      <ModalMaderas/> */}
-    <Inicio/>
-    </div>
-  );
-}
-
-const Inicio = ({ setSeleccion }) => {
+const Inicio = ({ cambio }) => {
   const estiloImg = "w-64 my-3 sm:w-72 md:w-80 lg:w-96 hover:p-5";
   const renatoClick = () => {
-    setSeleccion("renato");
+    cambio("renato");
   };
   return (
     <>
@@ -63,7 +45,7 @@ const Inicio = ({ setSeleccion }) => {
 };
 
 const Renato = ({ handleClose }) => {
-  const { setShowDicMaderas } = useContext(Context);
+  const { navigateToMaderas, navigateToPinturas, navigateToHogar, navigateToIluminacion } = useContext(Context);
   return (
     <>
       <div className="flex flex-col">
@@ -76,28 +58,28 @@ const Renato = ({ handleClose }) => {
           Elige el insumo del cual necesitas buscar proveedores RE
         </p>
         <div className="flex flex-col justify-center z-20 relative items-center md:flex-row">
-          <button onClick={()=>setShowDicMaderas(true)}>
+          <button onClick={navigateToMaderas}>
             <LazyLoadImage
               src={rec118}
               alt="renato"
               className="w-40 h-40 my-3 md:w-52 md:h-52 mx-10 hover:p-5"
             />
           </button>
-          <button>
+          <button onClick={navigateToPinturas}>
             <LazyLoadImage
               src={rec119}
               alt="renato"
               className="w-40 h-40 my-3 md:w-52 md:h-52 mx-10 hover:p-5"
             />
           </button>
-          <button>
+          <button onClick={navigateToIluminacion}>
             <LazyLoadImage
               src={rec120}
               alt="renato"
               className="w-40 h-40 my-3 md:w-52 md:h-52 mx-10 hover:p-5"
             />
           </button>
-          <button>
+          <button onClick={navigateToHogar}>
             <LazyLoadImage
               src={rec121}
               alt="renato"
@@ -109,5 +91,31 @@ const Renato = ({ handleClose }) => {
     </>
   );
 };
+
+function Directorio() {
+  
+
+  const [seleccion, setSeleccion] = useState("");
+  const irAInicio = () => {
+    setSeleccion("");
+  };
+
+  return (
+    <div className="mx-16 md:mx-32">
+      {seleccion == "" ? (
+        <Inicio cambio={setSeleccion} />
+      ) : seleccion == "renato" ? (
+        <Renato handleClose={irAInicio} />
+      ) : null}
+
+      <ModalMaderas/>
+    <ModalPinturas/>
+    <ModalIluminacion/>
+    <ModalHogar/>
+    </div>
+  );
+}
+
+
 
 export default Directorio;
