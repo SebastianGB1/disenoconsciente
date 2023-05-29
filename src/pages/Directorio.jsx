@@ -23,12 +23,13 @@ function Directorio() {
 
   return (
     <div className="mx-16 md:mx-32">
-      {seleccion == "" ? (
+      {/* {seleccion == "" ? (
         <Inicio setSeleccion={setSeleccion} />
       ) : seleccion == "renato" ? (
         <Renato handleClose={irAInicio} />
       ) : null}
-      <ModalMaderas/>
+      <ModalMaderas/> */}
+    <Inicio/>
     </div>
   );
 }
