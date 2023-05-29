@@ -20,6 +20,12 @@ export function ContextProvider(props) {
   const [showDicIluminacion, setShowDicIluminacion] = useState(false);
   const [showDicHogar, setShowDicHogar] = useState(false);
 
+  //Directorio Reinaldo
+  const [showDicTelas, setShowDicTelas] = useState(false);
+  const [showDicFibras, setShowDicFibras] = useState(false);
+  const [showDicTransformacion, setShowDicTransformacion] = useState(false);
+  const [showDicInsumos, setShowDicInsumos] = useState(false);
+
   const [comentariosPet, setComentariosPet] = useState([]);
   const [comentariosTincion, setComentariosTincion] = useState([]);
 
@@ -33,6 +39,8 @@ export function ContextProvider(props) {
     setComentariosTincion(result.data);
   };
 
+
+//Renato
   const navigateToPinturas = () => {
     setShowDicHogar(false);
     setShowDicIluminacion(false);
@@ -61,11 +69,45 @@ export function ContextProvider(props) {
     setShowDicPinturas(false);
   };
 
+  //Reinaldo
+  const navigateToTelas = () => {
+    setShowDicTelas(true)
+    setShowDicFibras(false)
+    setShowDicTransformacion(false)
+    setShowDicInsumos(false)
+  };
+
+  const navigateToFibras = () => {
+    setShowDicTelas(false)
+    setShowDicFibras(true)
+    setShowDicTransformacion(false)
+    setShowDicInsumos(false)
+  };
+
+  const navigateToTransformacion = () => {
+    setShowDicTelas(false)
+    setShowDicFibras(false)
+    setShowDicTransformacion(true)
+    setShowDicInsumos(false)
+  };
+
+  const navigateToInsumos = () => {
+    setShowDicTelas(false)
+    setShowDicFibras(false)
+    setShowDicTransformacion(false)
+    setShowDicInsumos(true)
+  };
+
+
   const salir = () => {
     setShowDicHogar(false);
     setShowDicIluminacion(false);
     setShowDicMaderas(false);
     setShowDicPinturas(false);
+    setShowDicTelas(false)
+    setShowDicFibras(false)
+    setShowDicTransformacion(false)
+    setShowDicInsumos(false)
   };
 
   return (
@@ -85,6 +127,10 @@ export function ContextProvider(props) {
         showDicPinturas,
         showDicIluminacion,
         showDicHogar,
+        showDicTelas,
+        showDicFibras,
+        showDicTransformacion,
+        showDicInsumos,
         setShowModal,
         setShowModalHome,
         setShowModalPet,
@@ -104,6 +150,14 @@ export function ContextProvider(props) {
         navigateToIluminacion,
         navigateToPinturas,
         salir,
+        setShowDicTelas,
+        setShowDicFibras,
+        setShowDicTransformacion,
+        setShowDicInsumos,
+        navigateToTelas,
+        navigateToFibras,
+        navigateToTransformacion,
+        navigateToInsumos
       }}
     >
       {props.children}

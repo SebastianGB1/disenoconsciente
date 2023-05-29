@@ -36,7 +36,7 @@ export default function PrensaCard() {
           La madera es un material ampliamente utilizado en la construcción y la fabricación de muebles debido a su versatilidad, durabilidad y belleza natural, también es utilizada para la fabricación de papel y productos de papel.  Sin embargo, su uso desmedido ha llevado a una deforestación acelerada, a la pérdida de importantes ecosistemas y a la disminución de la biodiversidad, un impacto negativo en el medio ambiente. En este sentido, se han desarrollado diferentes materiales alternativos a la madera, como los aglomerados, que buscan reducir este impacto. En este artículo, analizaremos en detalle los puntos positivos y negativos de estos materiales, así como su pertinencia en la sustitución de la madera en diferentes contextos.
           </p>
           <button onClick={handleClick}>
-            <LazyLoadImage src={leer_mas} alt="leer_mas" className="float-right w-44" />
+            <LazyLoadImage src={leer_mas} alt="leer_mas" className="float-right w-48 hover:bg-naranja rounded-lg px-3 pt-3" />
           </button>
         </div>
       </div>

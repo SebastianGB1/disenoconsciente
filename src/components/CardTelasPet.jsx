@@ -48,7 +48,7 @@ export default function PrensaCard() {
             moda sostenible.
           </p>
           <button onClick={handleClick}>
-            <LazyLoadImage src={leer_mas} alt="leer_mas" className="float-right w-44" />
+            <LazyLoadImage src={leer_mas} alt="leer_mas" className="float-right w-48 hover:bg-naranja rounded-lg px-3 pt-3" />
           </button>
         </div>
       </div>
