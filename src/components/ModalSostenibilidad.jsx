@@ -7,7 +7,7 @@ import fecha from "../static/images/fecha_renato.png";
 import recurso33 from "../static/images/Recurso 33_soste.png";
 import recurso35 from "../static/images/Recurso 35_madera.png";
 import recurso34 from "../static/images/Recurso 34_soste.png";
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useNavigate } from "react-router-dom";
 
 export default function HomeModal() {
@@ -30,7 +30,7 @@ export default function HomeModal() {
               <div className="border-0 rounded-3xl shadow-lg relative flex flex-col w-full px-5 md:px-20 bg-blanco outline-none focus:outline-none">
                 {/*header*/}
                 <button onClick={handleClose}>
-                  <img
+                  <LazyLoadImage
                     src={cerrar}
                     alt="Cerrar"
                     className="w-6 mt-6 float-right"
@@ -42,7 +42,7 @@ export default function HomeModal() {
                     emergentes comprometidos y Responsables
                   </h>
                 </div>
-                <img src={fecha} alt="Fecha" className="w-52 md:w-60 mb-10" />
+                <LazyLoadImage src={fecha} alt="Fecha" className="w-52 md:w-60 mb-10" />
                 <p className="leading-8 text-justify font-raleway">
                   Medellín es una ciudad colombiana que ha experimentado un auge
                   en la industria del diseño en los últimos años. Muchos
@@ -52,7 +52,7 @@ export default function HomeModal() {
                   materiales locales que los diseñadores pueden utilizar para
                   crear diseños únicos y sostenibles.
                 </p>
-                <img
+                <LazyLoadImage
                   src={recurso33}
                   alt="Recurso 33"
                   className="mx-10 my-10 md:mx-52"
@@ -95,7 +95,7 @@ export default function HomeModal() {
                       ambiental.
                     </p>
                   </li>
-                  <img
+                  <LazyLoadImage
                     src={recurso34}
                     alt="Recurso 34"
                     className="float-left w-40 md:w-60 mt-3 mr-3"
@@ -138,7 +138,7 @@ export default function HomeModal() {
                   Proveedores locales enfocados en la sostenibilidad
                 </h2>
                 <p className="mb-3 font-raleway text-justify leading-8">
-                  <img
+                  <LazyLoadImage
                     src={recurso35}
                     alt="Recurso 35"
                     className="float-right w-44 md:w-72 mt-3 ml-3"

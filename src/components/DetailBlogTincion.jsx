@@ -5,6 +5,7 @@ import { Context } from "../context/context";
 import TextareaAutosize from 'react-textarea-autosize';
 import {supabase} from '../supabase/client'
 import ListaComentarios from '../components/ListaComentarios'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function HomeModal() {
   const { showDetailTincion, setShowDetailTincion, getComentariosTincion, comentariosTincion } = useContext(Context);
@@ -44,7 +45,7 @@ export default function HomeModal() {
             <div className="border-0 rounded-3xl shadow-lg relative flex flex-col w-full px-5 md:px-20 bg-blanco outline-none focus:outline-none">
               {/*header*/}
               <button onClick={handleClose}>
-                <img
+                <LazyLoadImage
                   src={cerrar}
                   alt="Cerrar"
                   className="w-6 mt-6 float-right"

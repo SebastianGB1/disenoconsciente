@@ -10,6 +10,7 @@ import deg_rosado from '../static/images/deg_rosa.png'
 import deg_azul from '../static/images/deg_azul.png'
 import deg_naranja from '../static/images/deg_naranja.png'
 import deg_verde from '../static/images/deg_verde_oscuro.png'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function Prensa() {
   return (
@@ -33,14 +34,14 @@ function Prensa() {
 function GradientRosado() {
   return (
     <div className="h-80 w-80 lg:w-2/5 rounded-full absolute lg:top-0 lg:right-10 top-98 right-0 z-0">
-      <img src={deg_rosado} alt="rosa" />
+      <LazyLoadImage src={deg_rosado} alt="rosa" />
     </div>
   );
 }
 function GradientAzul() {
   return (
     <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-full md:top-3/4 lg:top-1/2 left-0 z-0 ">
-      <img src={deg_azul} alt="azul" />
+      <LazyLoadImage src={deg_azul} alt="azul" />
     </div>
   );
 }
@@ -48,7 +49,7 @@ function GradientAzul() {
 function GradientNaranja() {
   return (
     <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-105 md:top-3/4 lg:top-103 md:right-24 rigth-0 z-0">
-      <img src={deg_naranja} alt="naranaja" />
+      <LazyLoadImage src={deg_naranja} alt="naranaja" />
     </div>
   );
 }
@@ -56,7 +57,7 @@ function GradientNaranja() {
 function GradientVerde() {
   return (
     <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-102 md:top-3/4 lg:top-100 right-44 md:right-97 z-0 opacity-50">
-      <img src={deg_verde} alt="verde" />
+      <LazyLoadImage src={deg_verde} alt="verde" />
     </div>
   );
 }

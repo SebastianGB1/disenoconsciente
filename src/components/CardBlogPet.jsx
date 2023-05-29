@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Context } from "../context/context";
 import ver from "../static/images/Recurso 4_blog.png";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function CardBlogPet() {
   const { setShowDetailPet, setShowDetailTincion, getComentariosPet, getComentariosTincion } = useContext(Context);
@@ -27,7 +28,7 @@ export default function CardBlogPet() {
           </p>
         </div>
           <button onClick={handleClickPet}>
-            <img src={ver} alt="leer_mas" className="w-28 ml-5" />
+            <LazyLoadImage src={ver} alt="leer_mas" className="w-28 ml-5" />
           </button>
         </div>
         <div className="flex flex-col items-center bg-white rounded-3xl max-w-sm shadow-2xl md:flex-row md:max-w-5xl mx-5 p-5 mb-16 relative z-20">
@@ -40,7 +41,7 @@ export default function CardBlogPet() {
           </p>
         </div>
           <button onClick={handleClickTincion}>
-            <img src={ver} alt="leer_mas" className="w-28 ml-5" />
+            <LazyLoadImage src={ver} alt="leer_mas" className="w-28 ml-5" />
           </button>
         </div>
     </div>

@@ -3,6 +3,7 @@ import { Context } from "../context/context";
 import telas_pet from "../static/images/img_telas_pet.png";
 import firma_reinaldo from "../static/images/firma_reinaldo.png";
 import leer_mas from '../static/images/leer_mas.png'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function PrensaCard() {
   const { setShowModalPet, showModalPet } = useContext(Context);
@@ -15,12 +16,12 @@ export default function PrensaCard() {
     <div>
       <div className="flex flex-col items-center bg-white rounded-3xl max-w-sm shadow-2xl md:flex-row md:max-w-5xl mx-5 p-5 mb-16 relative z-20">
         <div className="md:basis-105">
-        <img
+        <LazyLoadImage
           className="w-100"
           src={telas_pet}
           alt="Telas pet"
         />
-        <img
+        <LazyLoadImage
           className="object-cover md:h-auto w-3/4 mt-5"
           src={firma_reinaldo}
           alt="Telas pet"
@@ -47,7 +48,7 @@ export default function PrensaCard() {
             moda sostenible.
           </p>
           <button onClick={handleClick}>
-            <img src={leer_mas} alt="leer_mas" className="float-right w-44" />
+            <LazyLoadImage src={leer_mas} alt="leer_mas" className="float-right w-44" />
           </button>
         </div>
       </div>

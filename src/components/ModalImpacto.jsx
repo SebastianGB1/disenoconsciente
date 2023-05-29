@@ -3,7 +3,7 @@ import Modal from "@mui/material/Modal";
 import cerrar from "../static/images/cerrarModal.png";
 import { Context } from "../context/context";
 import fecha from "../static/images/fecha_regina.png";
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import recurso39 from "../static/images/Recurso 39_impacto.png";
 import recurso41 from "../static/images/Recurso 41_impacto.png";
 import recurso42 from "../static/images/Recurso 42_impacto.png";
@@ -26,7 +26,7 @@ export default function HomeModal() {
               <div className="border-0 rounded-3xl shadow-lg relative flex flex-col w-full px-5 md:px-20 bg-blanco outline-none focus:outline-none">
                 {/*header*/}
                 <button onClick={handleClose}>
-                  <img
+                  <LazyLoadImage
                     src={cerrar}
                     alt="Cerrar"
                     className="w-6 mt-6 float-right"
@@ -37,9 +37,9 @@ export default function HomeModal() {
                     El impacto del color en el diseño sostenible
                   </h>
                 </div>
-                <img src={fecha} alt="Fecha" className="w-52 md:w-60 mb-10" />
+                <LazyLoadImage src={fecha} alt="Fecha" className="w-52 md:w-60 mb-10" />
                 <p className="leading-8 text-justify font-raleway mb-16">
-                  <img
+                  <LazyLoadImage
                     src={recurso39}
                     alt="Recurso 39"
                     className="float-left w-44 md:w-60 mt-2 mr-3"
@@ -62,7 +62,7 @@ export default function HomeModal() {
                   se lograba a través de técnicas ancestrales. Los tintes
                   naturales se obtenían de plantas, animales e incluso
                   minerales. Las técnicas de teñido, pintura
-                  <img
+                  <LazyLoadImage
                     src={recurso40}
                     alt="Recurso 40"
                     className="float-right w-44 md:w-60 ml-3"
@@ -94,7 +94,7 @@ export default function HomeModal() {
                   producción de estos productos químicos también puede generar
                   grandes cantidades de desechos tóxicos y contribuir a la
                   contaminación del aire, el agua y el suelo.
-                  <img
+                  <LazyLoadImage
                     src={recurso41}
                     alt="Recurso 41"
                     className="w-60 mx-auto md:w-72 mb-10 mt-5"
@@ -117,7 +117,7 @@ export default function HomeModal() {
                   El interés en los tintes naturales ha llevado a un
                   resurgimiento en el uso de técnicas ancestrales de coloración,
                   como el teñido con índigo, que ha sido utilizado durante
-                  <img
+                  <LazyLoadImage
                     src={recurso42}
                     alt="Recurso 42"
                     className="float-right w-44 md:w-72 ml-3"
@@ -146,7 +146,7 @@ export default function HomeModal() {
                   Conclusión
                 </h2>
                 <p className="mb-10 font-raleway text-justify leading-8 ">
-                    <img src={recurso43} alt="Recurso 43" className="float-left w-44 md:w-72 mr-3 mt-2"/>
+                    <LazyLoadImage src={recurso43} alt="Recurso 43" className="float-left w-44 md:w-72 mr-3 mt-2"/>
                 La coloración de los materiales es un aspecto importante del diseño que ha evolucionado significativamente a lo largo del tiempo. Aunque la industrialización ha hecho que la coloración sea más uniforme y predecible, también ha tenido un impacto ambiental significativo. Sin embargo, el enfoque hacia la sostenibilidad en la coloración de los materiales ha llevado a la exploración de opciones más naturales y menos dañinas para el medio ambiente. Los diseñadores deben ser conscientes de las prácticas sostenibles y responsables en la elección de los materiales y las técnicas de coloración, al seguir desarrollando nuevas técnicas y abrazar los métodos ancestrales, podemos lograr una coloración sostenible y hermosa en el diseño, considerando la vida útil de los productos que diseñan y cómo se pueden reciclar o reutilizar, en lugar de simplemente desecharse después de su uso.
                 </p>
               </div>

@@ -15,6 +15,7 @@ import ilustraciones from "../static/images/Recurso_27.png";
 import degradados from "../static/images/Recurso_28.png";
 import imagenesIA from "../static/images/Recurso_29.png";
 import estrella from "../static/images/Recurso_30.png";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function HomeModal() {
   const { showModalHome, setShowModalHome } = useContext(Context);
@@ -36,7 +37,7 @@ export default function HomeModal() {
             <div className="border-0 rounded-3xl shadow-lg relative flex flex-col w-full bg-blanco outline-none focus:outline-none">
               {/*header*/}
               <button onClick={handleClose}>
-                <img
+                <LazyLoadImage
                   src={cerrar}
                   alt="Cerrar"
                   className="w-6 mt-6 mr-6 float-right"
@@ -55,12 +56,12 @@ export default function HomeModal() {
                   <p className="text-cafe font-raleway">Colores principales</p>
                   <div className="border-2 border-cafe w-48 md:w-96 lg:w-auto">
                     <div className="flex flex-row w-24 md:w-48 lg:w-1/2">
-                      <img src={rec16} alt="#909bb9" />
-                      <img src={rec17} alt="#909bb9" />
+                      <LazyLoadImage src={rec16} alt="#909bb9" />
+                      <LazyLoadImage src={rec17} alt="#909bb9" />
                     </div>
                     <div className="flex flex-row w-24 md:w-48 lg:w-65">
-                      <img src={rec19} alt="#909bb9" />
-                      <img src={rec20} alt="#909bb9" />
+                      <LazyLoadImage src={rec19} alt="#909bb9" />
+                      <LazyLoadImage src={rec20} alt="#909bb9" />
                     </div>
                   </div>
                 </div>
@@ -70,8 +71,8 @@ export default function HomeModal() {
                   </p>
                   <div className="border-2 border-cafe flex flex-row lg:w-auto lg:h-auto">
                     <div className="flex flex-col w-24 md:w-48 lg:w-65">
-                      <img src={rec18} alt="#909bb9" />
-                      <img src={rec21} alt="#909bb9" />
+                      <LazyLoadImage src={rec18} alt="#909bb9" />
+                      <LazyLoadImage src={rec21} alt="#909bb9" />
                     </div>
                   </div>
                 </div>
@@ -157,7 +158,7 @@ export default function HomeModal() {
               <h3 className="text-cafe font-raleway text-sm sm:text-base mx-5 mb-9">
                 Planimetría
               </h3>
-              <img
+              <LazyLoadImage
                 src={logo}
                 alt="logo"
                 className="mx-16 sm:mx-44 md:mx-56 lg:mx-72"
@@ -165,12 +166,12 @@ export default function HomeModal() {
               <h3 className="text-cafe font-raleway text-sm sm:text-base mx-5  mt-16">
                 Variaciones
               </h3>
-              <img
+              <LazyLoadImage
                 src={variacionesLogo}
                 alt="variaciones1"
                 className="mx-5 sm:mx-10 md:mx-24 lg:mx-32 my-3 md:my-9"
               />
-              <img
+              <LazyLoadImage
                 src={variaciones2Logo}
                 alt="variaciones2"
                 className="mx-5 sm:mx-10 md:mx-24 lg:mx-32 my-3 md:my-9"
@@ -182,7 +183,7 @@ export default function HomeModal() {
               <h3 className="text-cafe font-raleway text-sm sm:text-base mx-5">
                 Ilustraciones de colores sólidos
               </h3>
-              <img
+              <LazyLoadImage
                 src={ilustraciones}
                 alt="ilustraciones"
                 className="mx-5 sm:mx-10 md:mx-24 lg:mx-32 my-3 md:my-5"
@@ -190,7 +191,7 @@ export default function HomeModal() {
               <h3 className="text-cafe font-raleway text-sm sm:text-base mx-5 mt-9">
                 Puntos degradados
               </h3>
-              <img
+              <LazyLoadImage
                 src={degradados}
                 alt="degradados"
                 className="mx-5 sm:mx-10 md:mx-24 lg:mx-32 my-3 md:my-5"
@@ -199,20 +200,20 @@ export default function HomeModal() {
                 <h3 className="text-cafe font-raleway text-sm sm:text-base ">
                   Imágenes generadas por IA
                 </h3>
-                <img
+                <LazyLoadImage
                   src={estrella}
                   alt="estrella"
                   className="w-2 h-2 float-left"
                 />
               </div>
-              <img
+              <LazyLoadImage
                 src={imagenesIA}
                 alt="IA"
                 className="mx-5 sm:mx-10 md:mx-24 lg:mx-32 my-3 md:my-5"
               />
               <div>
                 <p className="text-black font-raleway text-xxs  mx-10 mt-9 mb-5">
-                  <img
+                  <LazyLoadImage
                     src={estrella}
                     alt="estrella"
                     className="w-2 h-2 float-left"

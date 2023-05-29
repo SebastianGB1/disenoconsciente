@@ -14,6 +14,7 @@ export function ContextProvider(props) {
   const [showModalImpacto, setShowModalImpacto] = useState(false)
   const [showDetailPet, setShowDetailPet] = useState(false)
   const [showDetailTincion, setShowDetailTincion] = useState(false)
+  const [showDicMaderas, setShowDicMaderas] = useState(false)
 
   const [comentariosPet, setComentariosPet] = useState([])
   const [comentariosTincion, setComentariosTincion] = useState([])
@@ -41,6 +42,7 @@ export function ContextProvider(props) {
         showDetailTincion,
         comentariosPet,
         comentariosTincion,
+        showDicMaderas,
         setShowModal,
         setShowModalHome,
         setShowModalPet,
@@ -50,7 +52,8 @@ export function ContextProvider(props) {
         setShowDetailPet,
         setShowDetailTincion,
         getComentariosPet,
-        getComentariosTincion
+        getComentariosTincion,
+        setShowDicMaderas
       }}
     >
       {props.children}

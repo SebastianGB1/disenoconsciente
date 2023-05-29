@@ -7,6 +7,7 @@ import no_mas_botellas from '../static/images/no_mas_botellas.png'
 import recurso22 from '../static/images/Recurso 22_pet.png'
 import recurso23 from '../static/images/Recurso 23_pet.png'
 import recurso24 from '../static/images/Recurso 24_pet.png'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function HomeModal() {
   const { showModalPet, setShowModalPet } = useContext(Context);
@@ -24,7 +25,7 @@ export default function HomeModal() {
               <div className="border-0 rounded-3xl shadow-lg relative flex flex-col w-full px-5 md:px-20 bg-blanco outline-none focus:outline-none">
                 {/*header*/}
                 <button onClick={handleClose}>
-                  <img
+                  <LazyLoadImage
                     src={cerrar}
                     alt="Cerrar"
                     className="w-6 mt-6 float-right"
@@ -35,13 +36,13 @@ export default function HomeModal() {
                     Telas PET: una opción innovadora y responsable, ¿o no?
                   </h>
                 </div>
-                <img
+                <LazyLoadImage
                   src={fecha_reinaldo}
                   alt="Fecha"
                   className="w-52 md:w-60 mb-10"
                 />
                 <p className="leading-8 text-justify font-raleway">
-                <img src={no_mas_botellas} alt="No mas botellas" className="float-left w-44 md:w-60 m-3"/>
+                <LazyLoadImage src={no_mas_botellas} alt="No mas botellas" className="float-left w-44 md:w-60 m-3"/>
                   La moda sostenible se ha convertido en un tema de gran interés
                   para la industria textil y de la moda, así como para los
                   consumidores que buscan alternativas más amigables con el
@@ -57,7 +58,7 @@ export default function HomeModal() {
                   forma de reducir la cantidad de residuos plásticos en el medio
                   ambiente y fomentar la sostenibilidad.
                 </p>
-                <img src={recurso22} alt="Recurso 22" className="mx-16 my-10 md:mx-60"/>
+                <LazyLoadImage src={recurso22} alt="Recurso 22" className="mx-16 my-10 md:mx-60"/>
                 <h2 className="font-extrabold font-raleway mb-5">Ventajas de las telas PET</h2>
                 <ul className="max-w-3xl space-y-2 list-disc list-inside leading-8 text-justify font-raleway">
                     <li>Sostenibilidad: La producción de telas PET es una forma de reciclar botellas de plástico y reducir la cantidad de residuos en el medio ambiente. También reduce la necesidad de producir más tela a partir de materiales no renovables.</li>
@@ -69,7 +70,7 @@ export default function HomeModal() {
 
                 <h2 className="font-extrabold font-raleway mb-5 mt-16">Desventajas de las telas PET</h2>
                 <ul className="max-w-3xl space-y-2 list-disc list-inside leading-8 text-justify font-raleway">
-                    <img src={recurso23} alt="Recurso 23" className="float-right w-32 md:w-52 mt-3 ml-3"/>
+                    <LazyLoadImage src={recurso23} alt="Recurso 23" className="float-right w-32 md:w-52 mt-3 ml-3"/>
                     <li>Comodidad: Aunque las telas PET son duraderas, resistentes y fáciles de cuidar, su apariencia es similar a la del poliéster, lo que significa que tienen un aspecto más artificial y menos natural que las telas naturales, como el algodón y la seda. Pueden ser menos suaves al tacto y menos transpirables, lo que puede hacer que la ropa sea menos cómoda en climas cálidos.</li>
                     <li>Impacto ambiental: Aunque el reciclaje de botellas de plástico para producir telas PET es una forma de reducir los residuos en el medio ambiente, la producción y el transporte de estas telas también tienen un impacto ambiental requiriendo grandes cantidades de energía y agua. Además, si las telas PET se descartan después de su vida útil, todavía pueden tardar muchos años en descomponerse.</li>
                     <li>Limitaciones de color: Su disponibilidad en el mercado es limitada en cuanto al color debido a las características del proceso de producción. Por lo tanto, no se pueden producir telas PET en todos los colores disponibles para las telas naturales. </li>
@@ -77,7 +78,7 @@ export default function HomeModal() {
                 </ul>
                 <h2 className="font-extrabold font-raleway mb-5 mt-16">Conclusión</h2>
                 <p className="mb-3 font-raleway text-justify leading-8 ">Las telas PET son una opción interesante 
-                <img src={recurso24} alt="Recurso 24" className="float-left w-32 md:w-52 mt-3 mr-3"/>
+                <LazyLoadImage src={recurso24} alt="Recurso 24" className="float-left w-32 md:w-52 mt-3 mr-3"/>
                 para la producción de prendas de alta calidad y con un enfoque sostenible, pero no son una solución perfecta, a pesar de sus limitaciones y desventajas, su uso puede ayudar a reducir la contaminación ambiental y a crear una industria de moda más responsable y consciente del medio ambiente. Para seguir explorando esta opción, es importante seguir investigando y desarrollando tecnologías más avanzadas para la producción de telas PET, así como fomentar el uso responsable de estas telas por parte de los consumidores y la industria de la moda.</p>
               </div>
             </div>

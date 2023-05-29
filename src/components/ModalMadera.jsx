@@ -7,6 +7,7 @@ import recurso27 from "../static/images/Recurso 27_madera.png";
 import recurso28 from "../static/images/Recurso 28_madera.png";
 import recurso29 from "../static/images/Recurso 29_madera.png";
 import recurso30 from "../static/images/Recurso 30_madera.png";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function HomeModal() {
   const { showModalMadera, setShowModalMadera } = useContext(Context);
@@ -24,7 +25,7 @@ export default function HomeModal() {
               <div className="border-0 rounded-3xl shadow-lg relative flex flex-col w-full px-5 md:px-20 bg-blanco outline-none focus:outline-none">
                 {/*header*/}
                 <button onClick={handleClose}>
-                  <img
+                  <LazyLoadImage
                     src={cerrar}
                     alt="Cerrar"
                     className="w-6 mt-6 float-right"
@@ -35,9 +36,9 @@ export default function HomeModal() {
                     Sustituyendo la madera: ¿Vale la pena el cambio?
                   </h>
                 </div>
-                <img src={fecha} alt="Fecha" className="w-52 md:w-60 mb-10" />
+                <LazyLoadImage src={fecha} alt="Fecha" className="w-52 md:w-60 mb-10" />
                 <p className="leading-8 text-justify font-raleway mb-16">
-                  <img
+                  <LazyLoadImage
                     src={recurso27}
                     alt="Recurso 27"
                     className="float-right w-44 md:w-72 m-3"
@@ -97,7 +98,7 @@ export default function HomeModal() {
                       en zonas húmedas o cerca de fuentes de agua.
                     </p>
                   </li>
-                  <img
+                  <LazyLoadImage
                     src={recurso28}
                     alt="Recurso 22"
                     className="my-16 mx-auto w-72"
@@ -159,7 +160,7 @@ export default function HomeModal() {
                       Aunque los aglomerados utilizan menos madera que la madera
                       aserrada, su producción puede tener un impacto negativo en
                       el medio ambiente. En particular, la resina sintética
-                      <img
+                      <LazyLoadImage
                         src={recurso29}
                         alt="Recurso 29"
                         className="mr-3 w-44 md:w-72 float-left"
@@ -212,7 +213,7 @@ export default function HomeModal() {
                   hasta su disposición final, para evaluar su verdadero impacto
                   ambiental.
                 </p>
-                <img
+                <LazyLoadImage
                   src={recurso30}
                   alt="Recurso 30"
                   className="mx-auto w-72 md:w-96"

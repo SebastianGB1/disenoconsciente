@@ -5,6 +5,7 @@ import { Context } from "../context/context";
 import ListaComentarios from "./ListaComentarios";
 import { supabase } from "../supabase/client";
 import TextareaAutosize from 'react-textarea-autosize';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function DetailBlogPet() {
   const { showDetailPet, setShowDetailPet, getComentariosPet, comentariosPet } =
@@ -46,7 +47,7 @@ export default function DetailBlogPet() {
             <div className="rounded-3xl shadow-lg relative flex flex-col w-full px-5 md:px-20 bg-blanco">
               {/*header*/}
               <button onClick={handleClose}>
-                <img
+                <LazyLoadImage
                   src={cerrar}
                   alt="Cerrar"
                   className="w-6 mt-6 float-right"

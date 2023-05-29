@@ -10,6 +10,7 @@ import HomeModal from "../components/HomeModal";
 import deg_naranja from "../static/images/deg_naranja.png";
 import deg_azul from "../static/images/deg_azul.png";
 import deg_rosado from "../static/images/deg_rosa.png";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function Home() {
   const { setShowModalHome } = useContext(Context);
@@ -28,7 +29,7 @@ function Home() {
         <p className="text-2xl font-bold font-cooper text-verde-oscuro mb-5 relative z-20">
           ¿Qué es el diseño consciente?
         </p>
-        <img
+        <LazyLoadImage
           src={imagen8}
           alt="Recurso 8"
           className="h-44 lg:h-56  float-right m-2"
@@ -77,22 +78,22 @@ function Home() {
         </p>
       </div>
       <div className="flex flex-col justify-between my-10 z-20 relative items-center md:flex-row md:my-20">
-        <img
+        <LazyLoadImage
           src={renato}
           alt="renato"
           className="w-40 h-40 my-3 md:w-52 md:h-52"
         />
-        <img
+        <LazyLoadImage
           src={reinaldo}
           alt="Reinaldo"
           className="w-40 h-40 my-3 md:w-52 md:h-52"
         />
-        <img
+        <LazyLoadImage
           src={rebeca}
           alt="Rebeca"
           className="w-40 h-40 my-3 md:w-52 md:h-52"
         />
-        <img
+        <LazyLoadImage
           src={regina}
           alt="Regina"
           className="w-40 h-40 my-3 md:w-52 md:h-52"
@@ -126,14 +127,14 @@ function Home() {
 function GradientNaranja() {
   return (
     <div className="h-80 w-80 lg:w-1/3 rounded-full absolute lg:top-28 lg:right-20 top-56 right-0 z-0">
-      <img src={deg_naranja} alt="naranja" />
+      <LazyLoadImage src={deg_naranja} alt="naranja" />
     </div>
   );
 }
 function GradientAzul() {
   return (
     <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-full md:top-3/4 lg:top-1/2 left-0 z-0">
-      <img src={deg_azul} alt="azul" />
+      <LazyLoadImage src={deg_azul} alt="azul" />
     </div>
   );
 }
@@ -141,7 +142,7 @@ function GradientAzul() {
 function GradientRosado() {
   return (
     <div className="h-80 w-80 rounded-full absolute top-102 right-0 lg:top-100 lg:right-20 z-0">
-      <img src={deg_rosado} alt="rosado" />
+      <LazyLoadImage src={deg_rosado} alt="rosado" />
     </div>
   );
 }
@@ -155,7 +156,7 @@ function ReTittle() {
       </p>
 
       <div className="flex flex-row">
-        <img
+        <LazyLoadImage
           src={letraRE}
           alt="RE"
           className="h-32 md:h-32 lg:h-44 lg:mt-2 mr-2"

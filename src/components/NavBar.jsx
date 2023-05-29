@@ -1,6 +1,7 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import {useState} from 'react'
 import banner from '../static/images/LOGO HEAD BANNER.png'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function NavBar() {
   const [showMenu, setShowMenu] = useState(false)
@@ -16,7 +17,7 @@ export default function NavBar() {
     <>
 <nav className="bg-verde-oscuro fixed w-full z-50 top-0 left-0 ">
   {/* <p className="mt-2 font-raleway text-4xl text-blanco">RE</p> */}
-  <img src={banner} alt="Logo head banner" className="w-28 pt-3 px-3 mx-auto" />
+  <LazyLoadImage src={banner} alt="Logo head banner" className="w-28 pt-3 px-3 mx-auto" />
   <div className="max-w-screen-xl flex flex-wrap items-center md:justify-center mx-auto pb-2">
   <div className="flex md:order-2">
       <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false" onClick={clickShowMenu}>
