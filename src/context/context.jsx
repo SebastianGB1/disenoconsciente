@@ -26,6 +26,12 @@ export function ContextProvider(props) {
   const [showDicTransformacion, setShowDicTransformacion] = useState(false);
   const [showDicInsumos, setShowDicInsumos] = useState(false);
 
+  //Directorio Rebecca
+  const [showMaderasRebecca, setShowMaderasRebecca] = useState(false);
+  const [showDicVarios, setShowDicVarios] = useState(false);
+  const [showPinturasRebecca, setShowPinturasRebecca] = useState(false);
+  const [showDicEmpaques, setShowDicEmpaques] = useState(false);
+
   const [comentariosPet, setComentariosPet] = useState([]);
   const [comentariosTincion, setComentariosTincion] = useState([]);
 
@@ -39,8 +45,7 @@ export function ContextProvider(props) {
     setComentariosTincion(result.data);
   };
 
-
-//Renato
+  //Renato
   const navigateToPinturas = () => {
     setShowDicHogar(false);
     setShowDicIluminacion(false);
@@ -71,43 +76,72 @@ export function ContextProvider(props) {
 
   //Reinaldo
   const navigateToTelas = () => {
-    setShowDicTelas(true)
-    setShowDicFibras(false)
-    setShowDicTransformacion(false)
-    setShowDicInsumos(false)
+    setShowDicTelas(true);
+    setShowDicFibras(false);
+    setShowDicTransformacion(false);
+    setShowDicInsumos(false);
   };
 
   const navigateToFibras = () => {
-    setShowDicTelas(false)
-    setShowDicFibras(true)
-    setShowDicTransformacion(false)
-    setShowDicInsumos(false)
+    setShowDicTelas(false);
+    setShowDicFibras(true);
+    setShowDicTransformacion(false);
+    setShowDicInsumos(false);
   };
 
   const navigateToTransformacion = () => {
-    setShowDicTelas(false)
-    setShowDicFibras(false)
-    setShowDicTransformacion(true)
-    setShowDicInsumos(false)
+    setShowDicTelas(false);
+    setShowDicFibras(false);
+    setShowDicTransformacion(true);
+    setShowDicInsumos(false);
   };
 
   const navigateToInsumos = () => {
-    setShowDicTelas(false)
-    setShowDicFibras(false)
-    setShowDicTransformacion(false)
-    setShowDicInsumos(true)
+    setShowDicTelas(false);
+    setShowDicFibras(false);
+    setShowDicTransformacion(false);
+    setShowDicInsumos(true);
   };
 
+  //Rebecca
+  const navigateToMaderasRebecca = () => {
+    setShowMaderasRebecca(true);
+    setShowDicVarios(false);
+    setShowPinturasRebecca(false);
+    setShowDicEmpaques(false);
+  };
+  const navigateToVarios = () => {
+    setShowMaderasRebecca(false);
+    setShowDicVarios(true);
+    setShowPinturasRebecca(false);
+    setShowDicEmpaques(false);
+  };
+  const navigateToPinturasRebecca = () => {
+    setShowMaderasRebecca(false);
+    setShowDicVarios(false);
+    setShowPinturasRebecca(true);
+    setShowDicEmpaques(false);
+  };
+  const navigateToEmpaques = () => {
+    setShowMaderasRebecca(false);
+    setShowDicVarios(false);
+    setShowPinturasRebecca(false);
+    setShowDicEmpaques(true);
+  };
 
   const salir = () => {
     setShowDicHogar(false);
     setShowDicIluminacion(false);
     setShowDicMaderas(false);
     setShowDicPinturas(false);
-    setShowDicTelas(false)
-    setShowDicFibras(false)
-    setShowDicTransformacion(false)
-    setShowDicInsumos(false)
+    setShowDicTelas(false);
+    setShowDicFibras(false);
+    setShowDicTransformacion(false);
+    setShowDicInsumos(false);
+    setShowMaderasRebecca(false);
+    setShowDicVarios(false);
+    setShowPinturasRebecca(false);
+    setShowDicEmpaques(false);
   };
 
   return (
@@ -131,6 +165,10 @@ export function ContextProvider(props) {
         showDicFibras,
         showDicTransformacion,
         showDicInsumos,
+        showMaderasRebecca,
+        showDicVarios,
+        showPinturasRebecca,
+        showDicEmpaques,
         setShowModal,
         setShowModalHome,
         setShowModalPet,
@@ -157,7 +195,15 @@ export function ContextProvider(props) {
         navigateToTelas,
         navigateToFibras,
         navigateToTransformacion,
-        navigateToInsumos
+        navigateToInsumos,
+        setShowMaderasRebecca,
+        setShowDicVarios,
+        setShowPinturasRebecca,
+        setShowDicEmpaques,
+        navigateToMaderasRebecca,
+        navigateToVarios,
+        navigateToPinturasRebecca,
+        navigateToEmpaques
       }}
     >
       {props.children}

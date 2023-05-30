@@ -5,6 +5,7 @@ import rec118 from "../../static/images/Recurso 118.png";
 import rec119 from "../../static/images/Recurso 119.png";
 import rec120 from "../../static/images/Recurso 120.png";
 import rec121 from "../../static/images/Recurso 121.png";
+import volver from '../../static/images/volver.png'
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
@@ -18,9 +19,8 @@ export default function Renato({ handleClose }) {
   return (
     <>
       <div className="flex flex-col">
-        <button onClick={handleClose}>
-          <p className="text-left font-raleway">Volver</p>
-          {/* <LazyLoadImage src={volver} alt="Volver" className="w-6 mt-6 mr-6 float-right" /> */}
+        <button onClick={handleClose} className="h-16 w-40">
+          <LazyLoadImage src={volver} alt="Volver" className=" float-left hover:p-3" />
         </button>
         <LazyLoadImage src={rec117} className=" lg:w-96 self-center" />
         <p className="font-raleway my-10 text-le">

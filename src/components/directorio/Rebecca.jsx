@@ -1,52 +1,52 @@
 import { useContext } from "react";
 import { Context } from "../../context/context";
-import rec175 from '../../static/images/Recurso 175.png'
-import rec176 from '../../static/images/Recurso 176.png'
-import rec177 from '../../static/images/Recurso 177.png'
-import rec178 from '../../static/images/Recurso 178.png'
-import rec179 from '../../static/images/Recurso 179.png'
+import rec254 from '../../static/images/Recurso 254.png'
+import rec255 from '../../static/images/Recurso 255.png'
+import rec256 from '../../static/images/Recurso 256.png'
+import rec257 from '../../static/images/Recurso 257.png'
+import rec258 from '../../static/images/Recurso 258.png'
 import volver from '../../static/images/volver.png'
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
-export default function Reinaldo ({ handleClose }) {
-    const { navigateToTelas, navigateToFibras, navigateToTransformacion, navigateToInsumos } = useContext(Context);
+export default function Rebecca ({ handleClose }) {
+    const { navigateToMaderasRebecca, navigateToVarios, navigateToPinturasRebecca, navigateToEmpaques } = useContext(Context);
     return (
       <>
         <div className="flex flex-col">
         <button onClick={handleClose} className="h-16 w-40">
           <LazyLoadImage src={volver} alt="Volver" className=" float-left hover:p-3" />
         </button>
-          <LazyLoadImage src={rec175} className=" lg:w-96 self-center" />
+          <LazyLoadImage src={rec254} className=" lg:w-96 self-center" />
           <p className="font-raleway my-10 text-le">
             Elige el insumo del cual necesitas buscar proveedores RE
           </p>
           <div className="flex flex-col justify-center z-20 relative items-center md:flex-row">
-            <button onClick={navigateToTelas}>
+            <button onClick={navigateToMaderasRebecca}>
               <LazyLoadImage
-                src={rec176}
-                alt="reinaldo"
+                src={rec255}
+                alt="rebecca"
                 className="w-40 h-40 my-3 md:w-52 md:h-52 mx-10 hover:p-5"
               />
             </button>
-            <button onClick={navigateToFibras}>
+            <button onClick={navigateToVarios}>
               <LazyLoadImage
-                src={rec177}
-                alt="reinaldo"
+                src={rec256}
+                alt="rebecca"
                 className="w-40 h-40 my-3 md:w-52 md:h-52 mx-10 hover:p-5"
               />
             </button>
-            <button onClick={navigateToTransformacion}>
+            <button onClick={navigateToPinturasRebecca}>
               <LazyLoadImage
-                src={rec178}
-                alt="reinaldo"
+                src={rec257}
+                alt="rebecca"
                 className="w-40 h-40 my-3 md:w-52 md:h-52 mx-10 hover:p-5"
               />
             </button>
-            <button onClick={navigateToInsumos}>
+            <button onClick={navigateToEmpaques}>
               <LazyLoadImage
-                src={rec179}
-                alt="reinaldo"
+                src={rec258}
+                alt="rebecca"
                 className="w-40 h-40 my-3 md:w-52 md:h-52 mx-10 hover:p-5"
               />
             </button>
