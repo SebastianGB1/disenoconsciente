@@ -20,6 +20,11 @@ import ModalMaderasReb from "../components/directorio/ModalMaderasReb";
 import ModalVarios from "../components/directorio/ModalVarios";
 import ModalPinturasReb from "../components/directorio/ModalPinturasReb";
 import ModalEmpaques from "../components/directorio/ModalEmpaques";
+import Regina from "../components/directorio/Regina";
+import ModalLitografia from "../components/directorio/ModalLitografia";
+import ModalPapeles from "../components/directorio/ModalPapeles";
+import ModalEmpaquesRegina from "../components/directorio/ModalEmpaquesRegina";
+import ModalMarca from "../components/directorio/ModalMarca";
 
 const Inicio = ({ cambio }) => {
   const estiloLazyLoadImage = "w-64 my-3 sm:w-72 md:w-80 lg:w-96 hover:p-5";
@@ -72,7 +77,11 @@ function Directorio() {
         <Renato handleClose={irAInicio} />
       ) : seleccion == "reinaldo" ? (
         <Reinaldo handleClose={irAInicio} />
-      ) : seleccion == 'rebecca' ? <Rebecca handleClose={irAInicio}/>:null}
+      ) : seleccion == "rebecca" ? (
+        <Rebecca handleClose={irAInicio} />
+      ) : seleccion == "regina" ? (
+        <Regina handleClose={irAInicio}/>
+      ) : null}
       {/* Renato */}
       <ModalMaderas />
       <ModalPinturas />
@@ -80,14 +89,19 @@ function Directorio() {
       <ModalHogar />
       {/* Reinaldo */}
       <ModalTelas />
-      <ModalFibras/>
-      <ModalTranformacion/>
-      <ModalInsumos/>
+      <ModalFibras />
+      <ModalTranformacion />
+      <ModalInsumos />
       {/* Rebecca */}
-      <ModalMaderasReb/>
-      <ModalVarios/>
-      <ModalPinturasReb/>
-      <ModalEmpaques/>
+      <ModalMaderasReb />
+      <ModalVarios />
+      <ModalPinturasReb />
+      <ModalEmpaques />
+      {/* Regina */}
+      <ModalLitografia/>
+      <ModalPapeles/>
+      <ModalEmpaquesRegina/>
+      <ModalMarca/>
     </div>
   );
 }

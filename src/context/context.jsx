@@ -32,6 +32,12 @@ export function ContextProvider(props) {
   const [showPinturasRebecca, setShowPinturasRebecca] = useState(false);
   const [showDicEmpaques, setShowDicEmpaques] = useState(false);
 
+  //Directorio Regina
+  const [showLitografia, setShowLitografia] = useState(false);
+  const [showPapeles, setShowPapeles] = useState(false);
+  const [showEmpaquesRegina, setShowEmpaquesRegina] = useState(false);
+  const [showMarca, setShowMarca] = useState(false);
+
   const [comentariosPet, setComentariosPet] = useState([]);
   const [comentariosTincion, setComentariosTincion] = useState([]);
 
@@ -129,6 +135,32 @@ export function ContextProvider(props) {
     setShowDicEmpaques(true);
   };
 
+  //Regina
+  const navigateToLitografia = () => {
+    setShowLitografia(true)
+    setShowPapeles(false);
+    setShowEmpaquesRegina(false);
+    setShowMarca(false);
+  };
+  const navigateToPapeles = () => {
+    setShowLitografia(false)
+    setShowPapeles(true);
+    setShowEmpaquesRegina(false);
+    setShowMarca(false);
+  };
+  const navigateToEmpaquesRegina = () => {
+    setShowLitografia(false)
+    setShowPapeles(false);
+    setShowEmpaquesRegina(true);
+    setShowMarca(false);
+  };
+  const navigateToMarca = () => {
+    setShowLitografia(false)
+    setShowPapeles(false);
+    setShowEmpaquesRegina(false);
+    setShowMarca(true);
+  };
+
   const salir = () => {
     setShowDicHogar(false);
     setShowDicIluminacion(false);
@@ -142,6 +174,10 @@ export function ContextProvider(props) {
     setShowDicVarios(false);
     setShowPinturasRebecca(false);
     setShowDicEmpaques(false);
+    setShowLitografia(false)
+    setShowPapeles(false);
+    setShowEmpaquesRegina(false);
+    setShowMarca(false);
   };
 
   return (
@@ -169,6 +205,10 @@ export function ContextProvider(props) {
         showDicVarios,
         showPinturasRebecca,
         showDicEmpaques,
+        showLitografia,
+        showPapeles,
+        showEmpaquesRegina,
+        showMarca,
         setShowModal,
         setShowModalHome,
         setShowModalPet,
@@ -203,7 +243,15 @@ export function ContextProvider(props) {
         navigateToMaderasRebecca,
         navigateToVarios,
         navigateToPinturasRebecca,
-        navigateToEmpaques
+        navigateToEmpaques,
+        setShowLitografia,
+        setShowPapeles,
+        setShowEmpaquesRegina,
+        setShowMarca,
+        navigateToLitografia,
+        navigateToPapeles,
+        navigateToEmpaquesRegina,
+        navigateToMarca
       }}
     >
       {props.children}
