@@ -9,13 +9,16 @@ import rec312 from '../../static/images/Recurso 312.png'
 
 import volver from '../../static/images/volver.png'
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import verde_oscuro from '../../static/images/deg_verde_oscuro.png'
+import verde_claro from '../../static/images/deg_verde_claro.png'
+import cafe from '../../static/images/deg_cafe.png'
 
 
 export default function Regina ({ handleClose }) {
     const { navigateToLitografia, navigateToPapeles, navigateToEmpaquesRegina, navigateToMarca } = useContext(Context);
     return (
       <>
-        <div className="flex flex-col">
+        <div className="flex flex-col relative z-20">
         <button onClick={handleClose} className="h-16 w-40">
           <LazyLoadImage src={volver} alt="Volver" className=" float-left hover:p-3" />
         </button>
@@ -54,6 +57,33 @@ export default function Regina ({ handleClose }) {
             </button>
           </div>
         </div>
+        <GradienteVerdeOscuro/>
+        <GradienteVerdeClaro/>
+        <GradienteVerdeCafe/>
       </>
     );
   };
+
+  function GradienteVerdeOscuro() {
+    return (
+      <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-full md:top-0 right-0 z-0 ">
+        <LazyLoadImage src={verde_oscuro} alt="" />
+      </div>
+    );
+  }
+
+  function GradienteVerdeClaro() {
+    return (
+      <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-full md:top-44 left-0 z-0 ">
+        <LazyLoadImage src={verde_claro} alt="" />
+      </div>
+    );
+  }
+
+  function GradienteVerdeCafe() {
+    return (
+      <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-full md:top-96 left-96 z-0 ">
+        <LazyLoadImage src={cafe} alt="" />
+      </div>
+    );
+  }

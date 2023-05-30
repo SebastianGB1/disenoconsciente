@@ -7,6 +7,8 @@ import rec120 from "../../static/images/Recurso 120.png";
 import rec121 from "../../static/images/Recurso 121.png";
 import volver from '../../static/images/volver.png'
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import rosado from '../../static/images/deg_rosa.png'
+import verde_claro from '../../static/images/deg_verde_claro.png'
 
 
 export default function Renato({ handleClose }) {
@@ -18,7 +20,7 @@ export default function Renato({ handleClose }) {
   } = useContext(Context);
   return (
     <>
-      <div className="flex flex-col">
+      <div className="flex flex-col relative z-20">
         <button onClick={handleClose} className="h-16 w-40">
           <LazyLoadImage src={volver} alt="Volver" className=" float-left hover:p-3" />
         </button>
@@ -57,6 +59,24 @@ export default function Renato({ handleClose }) {
           </button>
         </div>
       </div>
+      <GradientRosado/>
+      <GradienteVerde/>
     </>
+  );
+}
+
+function GradientRosado() {
+  return (
+    <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-full md:top-10 right-40 z-0 ">
+      <LazyLoadImage src={rosado} alt="" />
+    </div>
+  );
+}
+
+function GradienteVerde() {
+  return (
+    <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-full md:top-1/3 left-0 z-0 ">
+      <LazyLoadImage src={verde_claro} alt="" />
+    </div>
   );
 }

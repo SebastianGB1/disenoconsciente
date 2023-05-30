@@ -7,13 +7,16 @@ import rec178 from '../../static/images/Recurso 178.png'
 import rec179 from '../../static/images/Recurso 179.png'
 import volver from '../../static/images/volver.png'
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import verde from '../../static/images/deg_verde_oscuro.png'
+import cafe from '../../static/images/deg_cafe.png'
+
 
 
 export default function Reinaldo ({ handleClose }) {
     const { navigateToTelas, navigateToFibras, navigateToTransformacion, navigateToInsumos } = useContext(Context);
     return (
       <>
-        <div className="flex flex-col">
+        <div className="flex flex-col relative z-20">
         <button onClick={handleClose} className="h-16 w-40">
           <LazyLoadImage src={volver} alt="Volver" className=" float-left hover:p-3" />
         </button>
@@ -52,6 +55,27 @@ export default function Reinaldo ({ handleClose }) {
             </button>
           </div>
         </div>
+        <GradienteVerde/>
+        <GradienteCafe/>
       </>
     );
   };
+
+
+  
+function GradienteVerde() {
+  return (
+    <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-full md:top-1/3 right-0 z-0 ">
+      <LazyLoadImage src={verde} alt="" />
+    </div>
+  );
+}
+
+  
+function GradienteCafe() {
+  return (
+    <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-full md:top-10 left-0 z-0 ">
+      <LazyLoadImage src={cafe} alt="" />
+    </div>
+  );
+}

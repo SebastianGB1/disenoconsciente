@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import {  useState } from "react";
 import renato from "../static/images/directorio_renato.png";
 import reinaldo from "../static/images/directorio_reinaldo.png";
 import rebecca from "../static/images/directorio_rebecca.png";
@@ -25,6 +25,8 @@ import ModalLitografia from "../components/directorio/ModalLitografia";
 import ModalPapeles from "../components/directorio/ModalPapeles";
 import ModalEmpaquesRegina from "../components/directorio/ModalEmpaquesRegina";
 import ModalMarca from "../components/directorio/ModalMarca";
+import deg_azul from '../static/images/deg_azul.png'
+import deg_cafe from '../static/images/deg_cafe.png'
 
 const Inicio = ({ cambio }) => {
   const estiloLazyLoadImage = "w-64 my-3 sm:w-72 md:w-80 lg:w-96 hover:p-5";
@@ -59,6 +61,8 @@ const Inicio = ({ cambio }) => {
           <LazyLoadImage src={regina} alt="Renato" />
         </button>
       </div>
+      <GradientAzul/>
+      <GradienteCafe/>
     </>
   );
 };
@@ -102,6 +106,22 @@ function Directorio() {
       <ModalPapeles/>
       <ModalEmpaquesRegina/>
       <ModalMarca/>
+    </div>
+  );
+}
+
+function GradientAzul() {
+  return (
+    <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-full md:top-10 right-40 z-0 ">
+      <LazyLoadImage src={deg_azul} alt="azul" />
+    </div>
+  );
+}
+
+function GradienteCafe() {
+  return (
+    <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-full md:top-1/3 left-0 z-0 ">
+      <LazyLoadImage src={deg_cafe} alt="azul" />
     </div>
   );
 }

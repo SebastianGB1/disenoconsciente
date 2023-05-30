@@ -7,13 +7,15 @@ import rec257 from '../../static/images/Recurso 257.png'
 import rec258 from '../../static/images/Recurso 258.png'
 import volver from '../../static/images/volver.png'
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import cafe from '../../static/images/deg_cafe.png'
+import naranaja from '../../static/images/deg_naranja.png'
 
 
 export default function Rebecca ({ handleClose }) {
     const { navigateToMaderasRebecca, navigateToVarios, navigateToPinturasRebecca, navigateToEmpaques } = useContext(Context);
     return (
       <>
-        <div className="flex flex-col">
+        <div className="flex flex-col relative z-20">
         <button onClick={handleClose} className="h-16 w-40">
           <LazyLoadImage src={volver} alt="Volver" className=" float-left hover:p-3" />
         </button>
@@ -52,6 +54,24 @@ export default function Rebecca ({ handleClose }) {
             </button>
           </div>
         </div>
+        <GradienteCafe/>
+        <GradienteNaranja/>
       </>
     );
   };
+
+  function GradienteCafe() {
+    return (
+      <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-full md:top-20 right-0 z-0 ">
+        <LazyLoadImage src={cafe} alt="" />
+      </div>
+    );
+  }
+
+  function GradienteNaranja() {
+    return (
+      <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-full md:top-1/3 right-97 z-0 ">
+        <LazyLoadImage src={naranaja} alt="" />
+      </div>
+    );
+  }
