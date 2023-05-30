@@ -77,7 +77,7 @@ function GradienteVerde() {
 
 function GradienteRosado() {
   return (
-    <div className="h-80 w-80 lg:w-97 rounded-full absolute top-full md:top-20 left-44 z-0 ">
+    <div className="h-80 w-80 lg:w-97 rounded-full absolute top-full md:top-20 left-16 md:left-44 z-0 ">
       <LazyLoadImage src={rosado} alt="" />
     </div>
   );

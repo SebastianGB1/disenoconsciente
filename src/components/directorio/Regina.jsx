@@ -82,7 +82,7 @@ export default function Regina ({ handleClose }) {
 
   function GradienteVerdeCafe() {
     return (
-      <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-full md:top-96 left-96 z-0 ">
+      <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-full md:top-96 left-0 md:left-96 z-0 ">
         <LazyLoadImage src={cafe} alt="" />
       </div>
     );
