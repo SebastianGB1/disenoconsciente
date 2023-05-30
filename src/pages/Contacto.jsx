@@ -5,11 +5,14 @@ import rec372 from "../static/images/Recurso 372.png";
 import rec373 from "../static/images/Recurso 373.png";
 import rec374 from "../static/images/Recurso 374.png";
 import estrella from "../static/images/estrella.png";
+import verde from '../static/images/deg_verde_claro.png'
+import rosado from '../static/images/deg_rosa.png'
+import azul from '../static/images/deg_azul.png'
 
 function Contacto() {
   return (
     <div>
-      <div className="flex flex-col md:flex-row justify-center font-raleway mx-5 md:mx-32">
+      <div className="flex flex-col md:flex-row justify-center font-raleway mx-5 md:mx-32 relative z-20">
         <div className="flex flex-col justify-start md:basis-96 text-left md:mr-44">
           <h1 className="text-2xl font-bold mb-5">Ponte en contacto con RE</h1>
           <ul className="list-outside text-left items space-y-5">
@@ -41,12 +44,12 @@ function Contacto() {
           </div>
         </div>
       </div>
-      <p className="mx-auto w-4/5 text-justify md:w-1/2 font-raleway my-10">
+      <p className="mx-auto w-4/5 text-justify md:w-1/2 font-raleway my-10 relative z-20">
         En RE estamos dispuestos y felices de crear y agrandar esta comunidad
         mediante la divulgación pero también mediante la comunicación, denos el
         gusto de atenderlo, esperamos con ansias tu correo
       </p>
-      <div className="mx-auto flex items-center bg-white rounded-3xl max-w-sm shadow-2xl md:flex-row md:max-w-4xl p-5 mb-16 ">
+      <div className="mx-auto flex items-center bg-white rounded-3xl max-w-sm shadow-2xl md:flex-row md:max-w-4xl p-5 mb-16 relative z-20">
         <div className="flex flex-row md:px-20">
           <img src={estrella} className="w-5 h-5 mr-3" />
           <p className="text-justify font-raleway text-cafe">
@@ -57,6 +60,33 @@ function Contacto() {
           </p>
         </div>
       </div>
+      <GradienteVerde/>
+      <GradienteRosado/>
+      <GradienteAzul/>
+    </div>
+  );
+}
+
+function GradienteVerde() {
+  return (
+    <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-full md:top-0 right-0 z-0 ">
+      <LazyLoadImage src={verde} alt="" />
+    </div>
+  );
+}
+
+function GradienteRosado() {
+  return (
+    <div className="h-80 w-80 lg:w-97 rounded-full absolute top-full md:top-20 left-44 z-0 ">
+      <LazyLoadImage src={rosado} alt="" />
+    </div>
+  );
+}
+
+function GradienteAzul() {
+  return (
+    <div className="h-80 w-80 lg:w-1/3 rounded-full absolute top-full md:top-96 right-52 z-0 ">
+      <LazyLoadImage src={azul} alt="" />
     </div>
   );
 }
