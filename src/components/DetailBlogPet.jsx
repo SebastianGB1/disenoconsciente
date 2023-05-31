@@ -4,17 +4,30 @@ import cerrar from "../static/images/cerrarModal.png";
 import { Context } from "../context/context";
 import ListaComentarios from "./ListaComentarios";
 import { supabase } from "../supabase/client";
-import TextareaAutosize from 'react-textarea-autosize';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import TextareaAutosize from "react-textarea-autosize";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { useNavigate } from "react-router-dom";
 
 export default function DetailBlogPet() {
-  const { showDetailPet, setShowDetailPet, getComentariosPet, comentariosPet } =
-    useContext(Context);
+  const {
+    showDetailPet,
+    setShowDetailPet,
+    getComentariosPet,
+    comentariosPet,
+    setShowModalPet,
+  } = useContext(Context);
 
   const [comentario, setComentario] = useState("");
 
   const handleClose = () => {
     setShowDetailPet(false);
+  };
+
+  const nav = useNavigate();
+  const verMasClick = () => {
+    nav("/prensa");
+    setShowDetailPet(false);
+    setShowModalPet(true);
   };
 
   const addComentario = async () => {
@@ -65,9 +78,12 @@ export default function DetailBlogPet() {
                 recurso para la revolución de la industria de la moda. (Para
                 leer un artículo y tener mayor información sobre las ventajas y
                 desventajas de las telas PET de{" "}
-                <a href="#" className="bg-rosado px-2 py-1 rounded-lg hover:bg-verde-claro hover:text-white">
+                <button
+                  onClick={verMasClick}
+                  className="bg-rosado px-2 py-1 rounded-lg hover:bg-verde-claro hover:text-white"
+                >
                   click aquí
-                </a>
+                </button>
                 )
               </p>
               <TextareaAutosize

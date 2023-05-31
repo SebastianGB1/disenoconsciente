@@ -47,7 +47,7 @@ function Contacto() {
       <p className="mx-auto w-4/5 text-justify md:w-1/2 font-raleway my-10 relative z-20">
         En RE estamos dispuestos y felices de crear y agrandar esta comunidad
         mediante la divulgación pero también mediante la comunicación, denos el
-        gusto de atenderlo, esperamos con ansias tu correo
+        gusto de atenderlo, esperamos con ansias tu mensaje
       </p>
       <div className="mx-auto flex items-center bg-white rounded-3xl max-w-sm shadow-2xl md:flex-row md:max-w-4xl p-5 mb-16 relative z-20">
         <div className="flex flex-row md:px-20">

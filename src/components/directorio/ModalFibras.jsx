@@ -132,7 +132,7 @@ const Card2 = () => {
       <div className="self-center">
         <div className="flex flex-col items-center bg-white rounded-3xl max-w-sm shadow-2xl md:flex-row md:max-w-4xl mx-5 p-5 mb-16">
           <div className="flex flex-col justify-certer py-4 px-10">
-            <h1>CANNACORP</h1>
+            <h1>CASA CANNA</h1>
             <LazyLoadImage src={rec216} className="w-60 self-center mb-5" />
             <ol className="max-w-3xl space-y-5 list-none leading-8 text-justify font-raleway mb-8">
               <li>
@@ -140,7 +140,7 @@ const Card2 = () => {
                   <img src={descarga} className="w-10 h-10 mr-3" />
                   <ul>
                     <li>
-                    Telas hechas de fibra de cáñamo y cruzados con el mismo
+                    Telas hechas de fibra de cáñamo y blends con otras fibras naturales como el algodón orgánico o bamboo
                     </li>
                     <li>
                     Se han aliado con productores de fibras y telas sostenibles de todo el mundo para ofrecer una amplia gama de fibras y telas de cáñamo a los mercados éticos latinoamericanos que están en constante crecimiento
@@ -160,7 +160,12 @@ const Card2 = () => {
                       </li>
                       <li className="list-item">
                         <p>
-                          - La fibra crece densamente, rinden mucha más fibra por hectárea que otras plantas textiles
+                          - La fibra crece densamente, rinden mucha más fibra por hectárea que otras plantas textiles. El cáñamo es la fibra más sostenible del mercado
+                        </p>
+                      </li>
+                      <li className="list-item">
+                        <p>
+                          - Son 100% naturales, biodegradables y reciclables.
                         </p>
                       </li>
                       <li className="list-item">
@@ -170,7 +175,7 @@ const Card2 = () => {
                       </li>
                       <li className="list-item">
                         <p>
-                          - Más de 30 toneladas de botellas PET y 90 toneladas de sobrantes de confección reciclados
+                          - Tienen múltiples beneficios y son extremadamente amigables con el medio ambiente durante todo el proceso, desde el cultivo de la materia prima hasta la fabricación del producto final.
                         </p>
                       </li>
                       <li className="list-item">
@@ -184,14 +189,17 @@ const Card2 = () => {
                 <div className="flex flex-row">
                   <img src={location} className="w-10 h-10 mr-3" />
                   <p>
-                  No cuentan con dirección, para más información contactar a la empresa a través de su sitio web 
+                  Carrera 4 # 7 - 115, Oficina 203, Cartagena, Colombia
                   </p>
                 </div>
               </li>
               <li>
                 <div className="flex flex-row">
                   <img src={contacto} className="w-10 h-10 mr-3" />
-                  <p>Visitar sitio web para contactar a la empresa </p>
+                  <ul>
+                    <li>Roberto Sanabria</li>
+                    <li>+57 320 549 640</li>
+                  </ul>
                 </div>
               </li>
               <li>

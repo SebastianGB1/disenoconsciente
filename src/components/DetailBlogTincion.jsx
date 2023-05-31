@@ -1,19 +1,33 @@
-import { useContext , useState} from "react";
+import { useContext, useState } from "react";
 import Modal from "@mui/material/Modal";
 import cerrar from "../static/images/cerrarModal.png";
 import { Context } from "../context/context";
-import TextareaAutosize from 'react-textarea-autosize';
-import {supabase} from '../supabase/client'
-import ListaComentarios from '../components/ListaComentarios'
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import TextareaAutosize from "react-textarea-autosize";
+import { supabase } from "../supabase/client";
+import ListaComentarios from "../components/ListaComentarios";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { useNavigate } from "react-router-dom";
 
 export default function HomeModal() {
-  const { showDetailTincion, setShowDetailTincion, getComentariosTincion, comentariosTincion } = useContext(Context);
+  const {
+    showDetailTincion,
+    setShowDetailTincion,
+    getComentariosTincion,
+    comentariosTincion,
+    setShowModalImpacto,
+  } = useContext(Context);
 
-  const [comentario, setComentario] = useState("")
+  const [comentario, setComentario] = useState("");
 
   const handleClose = () => {
     setShowDetailTincion(false);
+  };
+
+  const nav = useNavigate();
+  const verMasClick = () => {
+    nav("/prensa");
+    setShowDetailTincion(false);
+    setShowModalImpacto(true);
   };
 
   const addComentario = async () => {
@@ -67,9 +81,12 @@ export default function HomeModal() {
                 estás pueden ser tratadas en su impacto al medio ambiente. (Para
                 leer más sobre la coloración durante la historia y en los
                 diferentes tipos de sustratos da{" "}
-                <a href="#" className="bg-rosado px-2 py-1 rounded-lg hover:bg-verde-claro hover:text-white">
+                <button
+                  onClick={verMasClick}
+                  className="bg-rosado px-2 py-1 rounded-lg hover:bg-verde-claro hover:text-white"
+                >
                   click aquí
-                </a>
+                </button>
                 )
               </p>
               <TextareaAutosize
@@ -81,7 +98,10 @@ export default function HomeModal() {
                 className="placeholder-cafe block p-2.5 w-full text-sm  rounded-lg"
                 value={comentario}
               />
-              <button className="bg-azul self-center p-2 rounded-xl text-blanco m-5 font-bold text-2xl hover:bg-verde-oscuro" onClick={addComentario}>
+              <button
+                className="bg-azul self-center p-2 rounded-xl text-blanco m-5 font-bold text-2xl hover:bg-verde-oscuro"
+                onClick={addComentario}
+              >
                 publicar {">"}
               </button>
               <ListaComentarios comentarios={comentariosTincion} />
